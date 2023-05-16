@@ -110,7 +110,9 @@ bool MyAppDelegate::applicationDidFinishLaunching( UI::Application *pApp, NS::Va
     _pViewDelegate = new MyMTKViewDelegate( _pDevice );
     _pMtkView->setDelegate( _pViewDelegate );
 
-    _pViewController->view()->addSubview( (UI::View *)_pMtkView );
+    UI::View *mtkView = (UI::View *)_pMtkView;
+    mtkView->setAutoresizingMask( UI::ViewAutoresizingFlexibleWidth | UI::ViewAutoresizingFlexibleHeight );
+    _pViewController->view()->addSubview( mtkView );
     _pWindow->setRootViewController( _pViewController );
 
     _pWindow->makeKeyAndVisible();

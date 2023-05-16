@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
-   version = "1.7">
+   LastUpgradeVersion = "1430"
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "71A9C0CA2734A09B00932563"
-               BuildableName = "03-animation.app"
+               BlueprintIdentifier = "83ABBB712A12FBE200763796"
+               BuildableName = "Animation.app"
                BlueprintName = "03-animation"
-               ReferencedContainer = "container:LearnMetalCpp.xcodeproj">
+               ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71A9C0CA2734A09B00932563"
-            BuildableName = "03-animation.app"
+            BlueprintIdentifier = "83ABBB712A12FBE200763796"
+            BuildableName = "Animation.app"
             BlueprintName = "03-animation"
-            ReferencedContainer = "container:LearnMetalCpp.xcodeproj">
+            ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71A9C0CA2734A09B00932563"
-            BuildableName = "03-animation.app"
+            BlueprintIdentifier = "83ABBB712A12FBE200763796"
+            BuildableName = "Animation.app"
             BlueprintName = "03-animation"
-            ReferencedContainer = "container:LearnMetalCpp.xcodeproj">
+            ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

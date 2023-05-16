@@ -18,11 +18,12 @@
 #include <cassert>
 
 #define NS_PRIVATE_IMPLEMENTATION
+#define UI_PRIVATE_IMPLEMENTATION
 #define MTL_PRIVATE_IMPLEMENTATION
 #define MTK_PRIVATE_IMPLEMENTATION
 #define CA_PRIVATE_IMPLEMENTATION
 #include <Metal/Metal.hpp>
-#include <AppKit/AppKit.hpp>
+#include <UIKit/UIKit.hpp>
 #include <MetalKit/MetalKit.hpp>
 
 #include <simd/simd.h>
@@ -58,19 +59,17 @@ class MyMTKViewDelegate : public MTK::ViewDelegate
         Renderer* _pRenderer;
 };
 
-class MyAppDelegate : public NS::ApplicationDelegate
+class MyAppDelegate : public UI::ApplicationDelegate
 {
     public:
         ~MyAppDelegate();
 
-        NS::Menu* createMenuBar();
-
-        virtual void applicationWillFinishLaunching( NS::Notification* pNotification ) override;
-        virtual void applicationDidFinishLaunching( NS::Notification* pNotification ) override;
-        virtual bool applicationShouldTerminateAfterLastWindowClosed( NS::Application* pSender ) override;
+        bool applicationDidFinishLaunching( UI::Application *pApp, NS::Value *options ) override;
+        void applicationWillTerminate( UI::Application *pApp ) override;
 
     private:
-        NS::Window* _pWindow;
+        UI::Window* _pWindow;
+        UI::ViewController* _pViewController;
         MTK::View* _pMtkView;
         MTL::Device* _pDevice;
         MyMTKViewDelegate* _pViewDelegate = nullptr;
@@ -78,22 +77,17 @@ class MyAppDelegate : public NS::ApplicationDelegate
 
 #pragma endregion Declarations }
 
-
 int main( int argc, char* argv[] )
 {
     NS::AutoreleasePool* pAutoreleasePool = NS::AutoreleasePool::alloc()->init();
 
     MyAppDelegate del;
-
-    NS::Application* pSharedApplication = NS::Application::sharedApplication();
-    pSharedApplication->setDelegate( &del );
-    pSharedApplication->run();
+    UI::ApplicationMain(argc, argv, &del);
 
     pAutoreleasePool->release();
 
     return 0;
 }
-
 
 #pragma mark - AppDelegate
 #pragma region AppDelegate {
@@ -102,69 +96,18 @@ MyAppDelegate::~MyAppDelegate()
 {
     _pMtkView->release();
     _pWindow->release();
+    _pViewController->release();
     _pDevice->release();
     delete _pViewDelegate;
 }
 
-NS::Menu* MyAppDelegate::createMenuBar()
+bool MyAppDelegate::applicationDidFinishLaunching( UI::Application *pApp, NS::Value *options )
 {
-    using NS::StringEncoding::UTF8StringEncoding;
+    CGRect frame = UI::Screen::mainScreen()->bounds();
 
-    NS::Menu* pMainMenu = NS::Menu::alloc()->init();
-    NS::MenuItem* pAppMenuItem = NS::MenuItem::alloc()->init();
-    NS::Menu* pAppMenu = NS::Menu::alloc()->init( NS::String::string( "Appname", UTF8StringEncoding ) );
+    _pWindow = UI::Window::alloc()->init(frame);
 
-    NS::String* appName = NS::RunningApplication::currentApplication()->localizedName();
-    NS::String* quitItemName = NS::String::string( "Quit ", UTF8StringEncoding )->stringByAppendingString( appName );
-    SEL quitCb = NS::MenuItem::registerActionCallback( "appQuit", [](void*,SEL,const NS::Object* pSender){
-        auto pApp = NS::Application::sharedApplication();
-        pApp->terminate( pSender );
-    } );
-
-    NS::MenuItem* pAppQuitItem = pAppMenu->addItem( quitItemName, quitCb, NS::String::string( "q", UTF8StringEncoding ) );
-    pAppQuitItem->setKeyEquivalentModifierMask( NS::EventModifierFlagCommand );
-    pAppMenuItem->setSubmenu( pAppMenu );
-
-    NS::MenuItem* pWindowMenuItem = NS::MenuItem::alloc()->init();
-    NS::Menu* pWindowMenu = NS::Menu::alloc()->init( NS::String::string( "Window", UTF8StringEncoding ) );
-
-    SEL closeWindowCb = NS::MenuItem::registerActionCallback( "windowClose", [](void*, SEL, const NS::Object*){
-        auto pApp = NS::Application::sharedApplication();
-            pApp->windows()->object< NS::Window >(0)->close();
-    } );
-    NS::MenuItem* pCloseWindowItem = pWindowMenu->addItem( NS::String::string( "Close Window", UTF8StringEncoding ), closeWindowCb, NS::String::string( "w", UTF8StringEncoding ) );
-    pCloseWindowItem->setKeyEquivalentModifierMask( NS::EventModifierFlagCommand );
-
-    pWindowMenuItem->setSubmenu( pWindowMenu );
-
-    pMainMenu->addItem( pAppMenuItem );
-    pMainMenu->addItem( pWindowMenuItem );
-
-    pAppMenuItem->release();
-    pWindowMenuItem->release();
-    pAppMenu->release();
-    pWindowMenu->release();
-
-    return pMainMenu->autorelease();
-}
-
-void MyAppDelegate::applicationWillFinishLaunching( NS::Notification* pNotification )
-{
-    NS::Menu* pMenu = createMenuBar();
-    NS::Application* pApp = reinterpret_cast< NS::Application* >( pNotification->object() );
-    pApp->setMainMenu( pMenu );
-    pApp->setActivationPolicy( NS::ActivationPolicy::ActivationPolicyRegular );
-}
-
-void MyAppDelegate::applicationDidFinishLaunching( NS::Notification* pNotification )
-{
-    CGRect frame = (CGRect){ {100.0, 100.0}, {512.0, 512.0} };
-
-    _pWindow = NS::Window::alloc()->init(
-        frame,
-        NS::WindowStyleMaskClosable|NS::WindowStyleMaskTitled,
-        NS::BackingStoreBuffered,
-        false );
+    _pViewController = UI::ViewController::alloc()->init( nil, nil );
 
     _pDevice = MTL::CreateSystemDefaultDevice();
 
@@ -175,18 +118,18 @@ void MyAppDelegate::applicationDidFinishLaunching( NS::Notification* pNotificati
     _pViewDelegate = new MyMTKViewDelegate( _pDevice );
     _pMtkView->setDelegate( _pViewDelegate );
 
-    _pWindow->setContentView( _pMtkView );
-    _pWindow->setTitle( NS::String::string( "01 - Primitive", NS::StringEncoding::UTF8StringEncoding ) );
+    UI::View *mtkView = (UI::View *)_pMtkView;
+    mtkView->setAutoresizingMask( UI::ViewAutoresizingFlexibleWidth | UI::ViewAutoresizingFlexibleHeight );
+    _pViewController->view()->addSubview( mtkView );
+    _pWindow->setRootViewController( _pViewController );
 
-    _pWindow->makeKeyAndOrderFront( nullptr );
+    _pWindow->makeKeyAndVisible();
 
-    NS::Application* pApp = reinterpret_cast< NS::Application* >( pNotification->object() );
-    pApp->activateIgnoringOtherApps( true );
+    return true;
 }
 
-bool MyAppDelegate::applicationShouldTerminateAfterLastWindowClosed( NS::Application* pSender )
+void MyAppDelegate::applicationWillTerminate( UI::Application *pApp )
 {
-    return true;
 }
 
 #pragma endregion AppDelegate }
@@ -314,17 +257,14 @@ void Renderer::buildBuffers()
     const size_t positionsDataSize = NumVertices * sizeof( simd::float3 );
     const size_t colorDataSize = NumVertices * sizeof( simd::float3 );
 
-    MTL::Buffer* pVertexPositionsBuffer = _pDevice->newBuffer( positionsDataSize, MTL::ResourceStorageModeManaged );
-    MTL::Buffer* pVertexColorsBuffer = _pDevice->newBuffer( colorDataSize, MTL::ResourceStorageModeManaged );
+    MTL::Buffer* pVertexPositionsBuffer = _pDevice->newBuffer( positionsDataSize, MTL::ResourceStorageModeShared );
+    MTL::Buffer* pVertexColorsBuffer = _pDevice->newBuffer( colorDataSize, MTL::ResourceStorageModeShared );
 
     _pVertexPositionsBuffer = pVertexPositionsBuffer;
     _pVertexColorsBuffer = pVertexColorsBuffer;
 
     memcpy( _pVertexPositionsBuffer->contents(), positions, positionsDataSize );
     memcpy( _pVertexColorsBuffer->contents(), colors, colorDataSize );
-
-    _pVertexPositionsBuffer->didModifyRange( NS::Range::Make( 0, _pVertexPositionsBuffer->length() ) );
-    _pVertexColorsBuffer->didModifyRange( NS::Range::Make( 0, _pVertexColorsBuffer->length() ) );
 }
 
 void Renderer::draw( MTK::View* pView )

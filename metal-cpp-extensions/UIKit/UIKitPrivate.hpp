@@ -82,14 +82,17 @@ _UI_PRIVATE_DEF_SEL( mainScreen,
 _UI_PRIVATE_DEF_SEL( makeKeyAndVisible,
                     "makeKeyAndVisible" );
 
-_UI_PRIVATE_DEF_SEL( sharedApplication,
-                    "sharedApplication" );
+_UI_PRIVATE_DEF_SEL( setAutoresizingMask_,
+                    "setAutoresizingMask:" );
 
 _UI_PRIVATE_DEF_SEL( setDelegate_,
                     "setDelegate:" );
 
 _UI_PRIVATE_DEF_SEL( setRootViewController_,
                     "setRootViewController:" );
+
+_UI_PRIVATE_DEF_SEL( sharedApplication,
+                    "sharedApplication" );
 
 _UI_PRIVATE_DEF_SEL( view,
                     "view" );

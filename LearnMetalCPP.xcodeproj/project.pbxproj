@@ -6,70 +6,7 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		40B3311727EDA0F30029F74E /* LearnMetalCPP */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 40B3311827EDA0F30029F74E /* Build configuration list for PBXAggregateTarget "LearnMetalCPP" */;
-			buildPhases = (
-			);
-			dependencies = (
-				40B3311E27EDA1070029F74E /* PBXTargetDependency */,
-				40B3312027EDA1070029F74E /* PBXTargetDependency */,
-				40B3312227EDA1070029F74E /* PBXTargetDependency */,
-				40B3312427EDA1070029F74E /* PBXTargetDependency */,
-				40B3312627EDA1070029F74E /* PBXTargetDependency */,
-				40B3312827EDA1070029F74E /* PBXTargetDependency */,
-				40B3312A27EDA1070029F74E /* PBXTargetDependency */,
-				40B3312C27EDA1070029F74E /* PBXTargetDependency */,
-				40B3312E27EDA1070029F74E /* PBXTargetDependency */,
-				40B3313027EDA1070029F74E /* PBXTargetDependency */,
-			);
-			name = LearnMetalCPP;
-			productName = LearnMetalCPP;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		71A9C0AA27349EB500932563 /* 01-primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0A927349EB500932563 /* 01-primitive.cpp */; };
-		71A9C0AB27349EE300932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C0AC27349EE700932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C0AD27349EEB00932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C0C32734A00900932563 /* 02-argbuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0C22734A00900932563 /* 02-argbuffers.cpp */; };
-		71A9C0C42734A01500932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C0C52734A01B00932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C0C62734A02000932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C0DC2734A0B800932563 /* 03-animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0DB2734A0B800932563 /* 03-animation.cpp */; };
-		71A9C0DD2734A0D500932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C0DE2734A0D800932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C0DF2734A0DC00932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C0F52734A12500932563 /* 04-instancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0F42734A12500932563 /* 04-instancing.cpp */; };
-		71A9C0F62734A13100932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C0F72734A13400932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C0F82734A13800932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C10E2734A18F00932563 /* 05-perspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C10D2734A18F00932563 /* 05-perspective.cpp */; };
-		71A9C10F2734A1BC00932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C1102734A1C000932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C1112734A1C300932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C1272734A21F00932563 /* 06-lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1262734A21F00932563 /* 06-lighting.cpp */; };
-		71A9C1282734A22700932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C1292734A22A00932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C12A2734A22E00932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C1402734A2B900932563 /* 07-texturing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C13F2734A2B900932563 /* 07-texturing.cpp */; };
-		71A9C1412734A2D200932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C1422734A2D500932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C1432734A2D800932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C1592734A30B00932563 /* 08-compute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1582734A30B00932563 /* 08-compute.cpp */; };
-		71A9C15A2734A31200932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C15B2734A31500932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C15C2734A31900932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C1722734A39300932563 /* 09-compute-to-render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1712734A39300932563 /* 09-compute-to-render.cpp */; };
-		71A9C1732734A3AB00932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C1742734A3AE00932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C1752734A3B200932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
-		71A9C18C2734A42900932563 /* 10-frame-debugging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C18A2734A42900932563 /* 10-frame-debugging.cpp */; };
-		71A9C18E2734A43200932563 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07727349D4500932563 /* MetalKit.framework */; };
-		71A9C18F2734A43500932563 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07527349D4200932563 /* Metal.framework */; };
-		71A9C1902734A43A00932563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9C07927349D5500932563 /* Foundation.framework */; };
 		83ABBB172A12C73000763796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83ABBB162A12C73000763796 /* Assets.xcassets */; };
 		83ABBB1A2A12C73000763796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ABBB182A12C73000763796 /* LaunchScreen.storyboard */; };
 		83ABBB212A12C73F00763796 /* 00-window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C09227349E3000932563 /* 00-window.cpp */; };
@@ -77,80 +14,57 @@
 		83ABBB252A12C74900763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
 		83ABBB272A12C74E00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBB292A12C75300763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBB472A12F0BA00763796 /* 01-primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0A927349EB500932563 /* 01-primitive.cpp */; };
+		83ABBB482A12F0E400763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBB492A12F0E400763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBB4A2A12F0E900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBB4B2A12F0ED00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBB692A12F23600763796 /* 02-argbuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0C22734A00900932563 /* 02-argbuffers.cpp */; };
+		83ABBB6A2A12F2B000763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBB6B2A12F2B000763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBB6C2A12F2B400763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBB6D2A12F2B800763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBB8B2A12FBF600763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBB8C2A12FBF600763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBB8D2A12FBF900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBB8E2A12FBFF00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBB8F2A12FC2700763796 /* 03-animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0DB2734A0B800932563 /* 03-animation.cpp */; };
+		83ABBBAD2A12FCF900763796 /* 04-instancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0F42734A12500932563 /* 04-instancing.cpp */; };
+		83ABBBAE2A12FD7D00763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBBAF2A12FD7D00763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBBB02A12FD8400763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBBB12A12FD8800763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBBCF2A12FDF300763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBBD02A12FDF300763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBBD12A12FDFA00763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBBD22A12FDFE00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBBD32A12FECF00763796 /* 05-perspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C10D2734A18F00932563 /* 05-perspective.cpp */; };
+		83ABBBF12A13015C00763796 /* 06-lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1262734A21F00932563 /* 06-lighting.cpp */; };
+		83ABBBF22A13016800763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBBF32A13016800763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBBF42A13016B00763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBBF52A13016F00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBC132A13037F00763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBC142A13037F00763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBC152A13038300763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBC162A13038B00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBC182A1303A600763796 /* 07-texturing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C13F2734A2B900932563 /* 07-texturing.cpp */; };
+		83ABBC362A1304EC00763796 /* 08-compute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1582734A30B00932563 /* 08-compute.cpp */; };
+		83ABBC372A13055700763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBC382A13055700763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBC392A13055A00763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBC3A2A13055D00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBC582A13061500763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBC592A13061500763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBC5A2A13061900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBC5B2A13061C00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBC5C2A1306A600763796 /* 09-compute-to-render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1712734A39300932563 /* 09-compute-to-render.cpp */; };
+		83ABBC7A2A13072400763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
+		83ABBC7B2A13072400763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
+		83ABBC7C2A13072900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
+		83ABBC7D2A13072D00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
+		83ABBC7E2A13073900763796 /* 10-frame-debugging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C18A2734A42900932563 /* 10-frame-debugging.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		40B3311D27EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C09827349E9000932563;
-			remoteInfo = "01-primitive";
-		};
-		40B3311F27EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C0B127349FE900932563;
-			remoteInfo = "02-argbuffers";
-		};
-		40B3312127EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C0CA2734A09B00932563;
-			remoteInfo = "03-animation";
-		};
-		40B3312327EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C0E32734A10200932563;
-			remoteInfo = "04-instancing";
-		};
-		40B3312527EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C0FC2734A17800932563;
-			remoteInfo = "05-perspective";
-		};
-		40B3312727EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C1152734A20200932563;
-			remoteInfo = "06-lighting";
-		};
-		40B3312927EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C12E2734A2A000932563;
-			remoteInfo = "07-texturemapping";
-		};
-		40B3312B27EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C1472734A2F200932563;
-			remoteInfo = "08-compute";
-		};
-		40B3312D27EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C1602734A37800932563;
-			remoteInfo = "09-compute-to-render";
-		};
-		40B3312F27EDA1070029F74E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71A9C05727349B9000932563 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71A9C1792734A3EF00932563;
-			remoteInfo = "10-programmatic-gpu-capture";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		40B3313227F3B7150029F74E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -158,138 +72,38 @@
 		71A9C07727349D4500932563 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		71A9C07927349D5500932563 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71A9C09227349E3000932563 /* 00-window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "00-window.cpp"; sourceTree = "<group>"; };
-		71A9C09927349E9000932563 /* 01-primitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-primitive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C0A927349EB500932563 /* 01-primitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "01-primitive.cpp"; sourceTree = "<group>"; };
-		71A9C0B227349FE900932563 /* 02-argbuffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-argbuffers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C0C22734A00900932563 /* 02-argbuffers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "02-argbuffers.cpp"; sourceTree = "<group>"; };
-		71A9C0CB2734A09B00932563 /* 03-animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C0DB2734A0B800932563 /* 03-animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "03-animation.cpp"; sourceTree = "<group>"; };
-		71A9C0E42734A10200932563 /* 04-instancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04-instancing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C0F42734A12500932563 /* 04-instancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "04-instancing.cpp"; sourceTree = "<group>"; };
-		71A9C0FD2734A17800932563 /* 05-perspective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-perspective.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C10D2734A18F00932563 /* 05-perspective.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "05-perspective.cpp"; sourceTree = "<group>"; };
-		71A9C1162734A20200932563 /* 06-lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-lighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C1262734A21F00932563 /* 06-lighting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "06-lighting.cpp"; sourceTree = "<group>"; };
-		71A9C12F2734A2A000932563 /* 07-texturing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-texturing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C13F2734A2B900932563 /* 07-texturing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "07-texturing.cpp"; sourceTree = "<group>"; };
-		71A9C1482734A2F200932563 /* 08-compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08-compute.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C1582734A30B00932563 /* 08-compute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "08-compute.cpp"; sourceTree = "<group>"; };
-		71A9C1612734A37800932563 /* 09-compute-to-render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09-compute-to-render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C1712734A39300932563 /* 09-compute-to-render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "09-compute-to-render.cpp"; sourceTree = "<group>"; };
-		71A9C17A2734A3EF00932563 /* 10-frame-debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-frame-debugging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9C18A2734A42900932563 /* 10-frame-debugging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "10-frame-debugging.cpp"; sourceTree = "<group>"; };
 		71A9C18B2734A42900932563 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		83ABBB082A12C72F00763796 /* 00-window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "00-window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB082A12C72F00763796 /* Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Window.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBB162A12C73000763796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83ABBB192A12C73000763796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83ABBB222A12C74900763796 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
 		83ABBB232A12C74900763796 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
 		83ABBB262A12C74E00763796 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		83ABBB282A12C75300763796 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		83ABBB2E2A12EFC300763796 /* Primitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primitive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB502A12F21600763796 /* Arg Buffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arg Buffers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB722A12FBE200763796 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB942A12FCB700763796 /* Instancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBBB62A12FDDA00763796 /* Perspective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perspective.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBBD82A13011700763796 /* Lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBBFA2A13031100763796 /* Texturing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texturing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBC1D2A13049600763796 /* Compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compute.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBC3F2A1305C500763796 /* Compute Render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compute Render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBC612A1306FB00763796 /* Debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debugging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71A9C09627349E9000932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0AD27349EEB00932563 /* MetalKit.framework in Frameworks */,
-				71A9C0AC27349EE700932563 /* Metal.framework in Frameworks */,
-				71A9C0AB27349EE300932563 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0AF27349FE900932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0C42734A01500932563 /* Foundation.framework in Frameworks */,
-				71A9C0C52734A01B00932563 /* Metal.framework in Frameworks */,
-				71A9C0C62734A02000932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0C82734A09B00932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0DD2734A0D500932563 /* Foundation.framework in Frameworks */,
-				71A9C0DE2734A0D800932563 /* Metal.framework in Frameworks */,
-				71A9C0DF2734A0DC00932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0E12734A10200932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0F82734A13800932563 /* Foundation.framework in Frameworks */,
-				71A9C0F72734A13400932563 /* Metal.framework in Frameworks */,
-				71A9C0F62734A13100932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0FA2734A17800932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1112734A1C300932563 /* Foundation.framework in Frameworks */,
-				71A9C1102734A1C000932563 /* Metal.framework in Frameworks */,
-				71A9C10F2734A1BC00932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1132734A20200932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C12A2734A22E00932563 /* Foundation.framework in Frameworks */,
-				71A9C1292734A22A00932563 /* Metal.framework in Frameworks */,
-				71A9C1282734A22700932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C12C2734A2A000932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1432734A2D800932563 /* Foundation.framework in Frameworks */,
-				71A9C1422734A2D500932563 /* Metal.framework in Frameworks */,
-				71A9C1412734A2D200932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1452734A2F200932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C15C2734A31900932563 /* Foundation.framework in Frameworks */,
-				71A9C15B2734A31500932563 /* Metal.framework in Frameworks */,
-				71A9C15A2734A31200932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C15E2734A37800932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1752734A3B200932563 /* Foundation.framework in Frameworks */,
-				71A9C1742734A3AE00932563 /* Metal.framework in Frameworks */,
-				71A9C1732734A3AB00932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1772734A3EF00932563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1902734A43A00932563 /* Foundation.framework in Frameworks */,
-				71A9C18F2734A43500932563 /* Metal.framework in Frameworks */,
-				71A9C18E2734A43200932563 /* MetalKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		83ABBB052A12C72F00763796 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +112,116 @@
 				83ABBB272A12C74E00763796 /* Foundation.framework in Frameworks */,
 				83ABBB242A12C74900763796 /* MetalKit.framework in Frameworks */,
 				83ABBB252A12C74900763796 /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB2B2A12EFC300763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBB482A12F0E400763796 /* Metal.framework in Frameworks */,
+				83ABBB4A2A12F0E900763796 /* UIKit.framework in Frameworks */,
+				83ABBB492A12F0E400763796 /* MetalKit.framework in Frameworks */,
+				83ABBB4B2A12F0ED00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB4D2A12F21600763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBB6A2A12F2B000763796 /* Metal.framework in Frameworks */,
+				83ABBB6C2A12F2B400763796 /* UIKit.framework in Frameworks */,
+				83ABBB6B2A12F2B000763796 /* MetalKit.framework in Frameworks */,
+				83ABBB6D2A12F2B800763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB6F2A12FBE200763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBB8B2A12FBF600763796 /* Metal.framework in Frameworks */,
+				83ABBB8D2A12FBF900763796 /* UIKit.framework in Frameworks */,
+				83ABBB8C2A12FBF600763796 /* MetalKit.framework in Frameworks */,
+				83ABBB8E2A12FBFF00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB912A12FCB600763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBBAE2A12FD7D00763796 /* Metal.framework in Frameworks */,
+				83ABBBB02A12FD8400763796 /* UIKit.framework in Frameworks */,
+				83ABBBAF2A12FD7D00763796 /* MetalKit.framework in Frameworks */,
+				83ABBBB12A12FD8800763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBB32A12FDDA00763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBBCF2A12FDF300763796 /* Metal.framework in Frameworks */,
+				83ABBBD12A12FDFA00763796 /* UIKit.framework in Frameworks */,
+				83ABBBD02A12FDF300763796 /* MetalKit.framework in Frameworks */,
+				83ABBBD22A12FDFE00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBD52A13011700763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBBF22A13016800763796 /* Metal.framework in Frameworks */,
+				83ABBBF42A13016B00763796 /* UIKit.framework in Frameworks */,
+				83ABBBF32A13016800763796 /* MetalKit.framework in Frameworks */,
+				83ABBBF52A13016F00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBF72A13031100763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC132A13037F00763796 /* Metal.framework in Frameworks */,
+				83ABBC152A13038300763796 /* UIKit.framework in Frameworks */,
+				83ABBC142A13037F00763796 /* MetalKit.framework in Frameworks */,
+				83ABBC162A13038B00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC1A2A13049600763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC372A13055700763796 /* Metal.framework in Frameworks */,
+				83ABBC392A13055A00763796 /* UIKit.framework in Frameworks */,
+				83ABBC382A13055700763796 /* MetalKit.framework in Frameworks */,
+				83ABBC3A2A13055D00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC3C2A1305C500763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC582A13061500763796 /* Metal.framework in Frameworks */,
+				83ABBC5A2A13061900763796 /* UIKit.framework in Frameworks */,
+				83ABBC592A13061500763796 /* MetalKit.framework in Frameworks */,
+				83ABBC5B2A13061C00763796 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC5E2A1306FB00763796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC7A2A13072400763796 /* Metal.framework in Frameworks */,
+				83ABBC7C2A13072900763796 /* UIKit.framework in Frameworks */,
+				83ABBC7B2A13072400763796 /* MetalKit.framework in Frameworks */,
+				83ABBC7D2A13072D00763796 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,17 +261,17 @@
 		71A9C06027349B9000932563 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71A9C09927349E9000932563 /* 01-primitive.app */,
-				71A9C0B227349FE900932563 /* 02-argbuffers.app */,
-				71A9C0CB2734A09B00932563 /* 03-animation.app */,
-				71A9C0E42734A10200932563 /* 04-instancing.app */,
-				71A9C0FD2734A17800932563 /* 05-perspective.app */,
-				71A9C1162734A20200932563 /* 06-lighting.app */,
-				71A9C12F2734A2A000932563 /* 07-texturing.app */,
-				71A9C1482734A2F200932563 /* 08-compute.app */,
-				71A9C1612734A37800932563 /* 09-compute-to-render.app */,
-				71A9C17A2734A3EF00932563 /* 10-frame-debugging.app */,
-				83ABBB082A12C72F00763796 /* 00-window.app */,
+				83ABBB082A12C72F00763796 /* Window.app */,
+				83ABBB2E2A12EFC300763796 /* Primitive.app */,
+				83ABBB502A12F21600763796 /* Arg Buffers.app */,
+				83ABBB722A12FBE200763796 /* Animation.app */,
+				83ABBB942A12FCB700763796 /* Instancing.app */,
+				83ABBBB62A12FDDA00763796 /* Perspective.app */,
+				83ABBBD82A13011700763796 /* Lighting.app */,
+				83ABBBFA2A13031100763796 /* Texturing.app */,
+				83ABBC1D2A13049600763796 /* Compute.app */,
+				83ABBC3F2A1305C500763796 /* Compute Render.app */,
+				83ABBC612A1306FB00763796 /* Debugging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -475,176 +399,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71A9C09827349E9000932563 /* 01-primitive */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C0A527349E9100932563 /* Build configuration list for PBXNativeTarget "01-primitive" */;
-			buildPhases = (
-				71A9C09527349E9000932563 /* Sources */,
-				71A9C09627349E9000932563 /* Frameworks */,
-				71A9C09727349E9000932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "01-primitive";
-			productName = "01-primitive";
-			productReference = 71A9C09927349E9000932563 /* 01-primitive.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C0B127349FE900932563 /* 02-argbuffers */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C0BE27349FEA00932563 /* Build configuration list for PBXNativeTarget "02-argbuffers" */;
-			buildPhases = (
-				71A9C0AE27349FE900932563 /* Sources */,
-				71A9C0AF27349FE900932563 /* Frameworks */,
-				71A9C0B027349FE900932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "02-argbuffers";
-			productName = "02-argbuffers";
-			productReference = 71A9C0B227349FE900932563 /* 02-argbuffers.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C0CA2734A09B00932563 /* 03-animation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C0D72734A09C00932563 /* Build configuration list for PBXNativeTarget "03-animation" */;
-			buildPhases = (
-				71A9C0C72734A09B00932563 /* Sources */,
-				71A9C0C82734A09B00932563 /* Frameworks */,
-				71A9C0C92734A09B00932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "03-animation";
-			productName = "03-animation";
-			productReference = 71A9C0CB2734A09B00932563 /* 03-animation.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C0E32734A10200932563 /* 04-instancing */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C0F02734A10300932563 /* Build configuration list for PBXNativeTarget "04-instancing" */;
-			buildPhases = (
-				71A9C0E02734A10200932563 /* Sources */,
-				71A9C0E12734A10200932563 /* Frameworks */,
-				71A9C0E22734A10200932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "04-instancing";
-			productName = "04-instancing";
-			productReference = 71A9C0E42734A10200932563 /* 04-instancing.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C0FC2734A17800932563 /* 05-perspective */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C1092734A17900932563 /* Build configuration list for PBXNativeTarget "05-perspective" */;
-			buildPhases = (
-				71A9C0F92734A17800932563 /* Sources */,
-				71A9C0FA2734A17800932563 /* Frameworks */,
-				71A9C0FB2734A17800932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "05-perspective";
-			productName = "05-perspective";
-			productReference = 71A9C0FD2734A17800932563 /* 05-perspective.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C1152734A20200932563 /* 06-lighting */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C1222734A20300932563 /* Build configuration list for PBXNativeTarget "06-lighting" */;
-			buildPhases = (
-				71A9C1122734A20200932563 /* Sources */,
-				71A9C1132734A20200932563 /* Frameworks */,
-				71A9C1142734A20200932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "06-lighting";
-			productName = "06-lighting";
-			productReference = 71A9C1162734A20200932563 /* 06-lighting.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C12E2734A2A000932563 /* 07-texturing */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C13B2734A2A100932563 /* Build configuration list for PBXNativeTarget "07-texturing" */;
-			buildPhases = (
-				71A9C12B2734A2A000932563 /* Sources */,
-				71A9C12C2734A2A000932563 /* Frameworks */,
-				71A9C12D2734A2A000932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "07-texturing";
-			productName = "07-texturemapping";
-			productReference = 71A9C12F2734A2A000932563 /* 07-texturing.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C1472734A2F200932563 /* 08-compute */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C1542734A2F300932563 /* Build configuration list for PBXNativeTarget "08-compute" */;
-			buildPhases = (
-				71A9C1442734A2F200932563 /* Sources */,
-				71A9C1452734A2F200932563 /* Frameworks */,
-				71A9C1462734A2F200932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "08-compute";
-			productName = "08-compute";
-			productReference = 71A9C1482734A2F200932563 /* 08-compute.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C1602734A37800932563 /* 09-compute-to-render */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C16D2734A37800932563 /* Build configuration list for PBXNativeTarget "09-compute-to-render" */;
-			buildPhases = (
-				71A9C15D2734A37800932563 /* Sources */,
-				71A9C15E2734A37800932563 /* Frameworks */,
-				71A9C15F2734A37800932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "09-compute-to-render";
-			productName = "09-compute-to-render";
-			productReference = 71A9C1612734A37800932563 /* 09-compute-to-render.app */;
-			productType = "com.apple.product-type.application";
-		};
-		71A9C1792734A3EF00932563 /* 10-frame-debugging */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71A9C1862734A3F000932563 /* Build configuration list for PBXNativeTarget "10-frame-debugging" */;
-			buildPhases = (
-				71A9C1762734A3EF00932563 /* Sources */,
-				71A9C1772734A3EF00932563 /* Frameworks */,
-				71A9C1782734A3EF00932563 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "10-frame-debugging";
-			productName = "10-programmatic-gpu-capture";
-			productReference = 71A9C17A2734A3EF00932563 /* 10-frame-debugging.app */;
-			productType = "com.apple.product-type.application";
-		};
 		83ABBB072A12C72F00763796 /* 00-window */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83ABBB1E2A12C73000763796 /* Build configuration list for PBXNativeTarget "00-window" */;
@@ -659,7 +413,177 @@
 			);
 			name = "00-window";
 			productName = "00-window";
-			productReference = 83ABBB082A12C72F00763796 /* 00-window.app */;
+			productReference = 83ABBB082A12C72F00763796 /* Window.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBB2D2A12EFC300763796 /* 01-primitive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBB442A12EFC400763796 /* Build configuration list for PBXNativeTarget "01-primitive" */;
+			buildPhases = (
+				83ABBB2A2A12EFC300763796 /* Sources */,
+				83ABBB2B2A12EFC300763796 /* Frameworks */,
+				83ABBB2C2A12EFC300763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-primitive";
+			productName = "01-primitive";
+			productReference = 83ABBB2E2A12EFC300763796 /* Primitive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBB4F2A12F21600763796 /* 02-argbuffers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBB662A12F21700763796 /* Build configuration list for PBXNativeTarget "02-argbuffers" */;
+			buildPhases = (
+				83ABBB4C2A12F21600763796 /* Sources */,
+				83ABBB4D2A12F21600763796 /* Frameworks */,
+				83ABBB4E2A12F21600763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-argbuffers";
+			productName = "02-argbuffers";
+			productReference = 83ABBB502A12F21600763796 /* Arg Buffers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBB712A12FBE200763796 /* 03-animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBB882A12FBE300763796 /* Build configuration list for PBXNativeTarget "03-animation" */;
+			buildPhases = (
+				83ABBB6E2A12FBE200763796 /* Sources */,
+				83ABBB6F2A12FBE200763796 /* Frameworks */,
+				83ABBB702A12FBE200763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-animation";
+			productName = "03-animation";
+			productReference = 83ABBB722A12FBE200763796 /* Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBB932A12FCB600763796 /* 04-instancing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBBAA2A12FCB800763796 /* Build configuration list for PBXNativeTarget "04-instancing" */;
+			buildPhases = (
+				83ABBB902A12FCB600763796 /* Sources */,
+				83ABBB912A12FCB600763796 /* Frameworks */,
+				83ABBB922A12FCB600763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04-instancing";
+			productName = "04-instancing";
+			productReference = 83ABBB942A12FCB700763796 /* Instancing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBBB52A12FDDA00763796 /* 05-perspective */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBBCC2A12FDDB00763796 /* Build configuration list for PBXNativeTarget "05-perspective" */;
+			buildPhases = (
+				83ABBBB22A12FDDA00763796 /* Sources */,
+				83ABBBB32A12FDDA00763796 /* Frameworks */,
+				83ABBBB42A12FDDA00763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05-perspective";
+			productName = "05-perspective";
+			productReference = 83ABBBB62A12FDDA00763796 /* Perspective.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBBD72A13011700763796 /* 06-lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBBEE2A13011800763796 /* Build configuration list for PBXNativeTarget "06-lighting" */;
+			buildPhases = (
+				83ABBBD42A13011700763796 /* Sources */,
+				83ABBBD52A13011700763796 /* Frameworks */,
+				83ABBBD62A13011700763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-lighting";
+			productName = "06-lighting";
+			productReference = 83ABBBD82A13011700763796 /* Lighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBBF92A13031100763796 /* 07-texturing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBC102A13031200763796 /* Build configuration list for PBXNativeTarget "07-texturing" */;
+			buildPhases = (
+				83ABBBF62A13031100763796 /* Sources */,
+				83ABBBF72A13031100763796 /* Frameworks */,
+				83ABBBF82A13031100763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07-texturing";
+			productName = "07-texturing";
+			productReference = 83ABBBFA2A13031100763796 /* Texturing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBC1C2A13049600763796 /* 08-compute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBC332A13049700763796 /* Build configuration list for PBXNativeTarget "08-compute" */;
+			buildPhases = (
+				83ABBC192A13049600763796 /* Sources */,
+				83ABBC1A2A13049600763796 /* Frameworks */,
+				83ABBC1B2A13049600763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "08-compute";
+			productName = "08-compute";
+			productReference = 83ABBC1D2A13049600763796 /* Compute.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBC3E2A1305C500763796 /* 09-compute-to-render */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBC552A1305C600763796 /* Build configuration list for PBXNativeTarget "09-compute-to-render" */;
+			buildPhases = (
+				83ABBC3B2A1305C500763796 /* Sources */,
+				83ABBC3C2A1305C500763796 /* Frameworks */,
+				83ABBC3D2A1305C500763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "09-compute-to-render";
+			productName = "09-compute-to-render";
+			productReference = 83ABBC3F2A1305C500763796 /* Compute Render.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ABBC602A1306FB00763796 /* 10-frame-debugging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ABBC772A1306FC00763796 /* Build configuration list for PBXNativeTarget "10-frame-debugging" */;
+			buildPhases = (
+				83ABBC5D2A1306FB00763796 /* Sources */,
+				83ABBC5E2A1306FB00763796 /* Frameworks */,
+				83ABBC5F2A1306FB00763796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "10-frame-debugging";
+			productName = "10-frame-debugging";
+			productReference = 83ABBC612A1306FB00763796 /* Debugging.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -669,43 +593,40 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
-					40B3311727EDA0F30029F74E = {
-						CreatedOnToolsVersion = 13.3;
-					};
-					71A9C09827349E9000932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C0B127349FE900932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C0CA2734A09B00932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C0E32734A10200932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C0FC2734A17800932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C1152734A20200932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C12E2734A2A000932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C1472734A2F200932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C1602734A37800932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					71A9C1792734A3EF00932563 = {
-						CreatedOnToolsVersion = 13.0;
-					};
 					83ABBB072A12C72F00763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBB2D2A12EFC300763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBB4F2A12F21600763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBB712A12FBE200763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBB932A12FCB600763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBBB52A12FDDA00763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBBD72A13011700763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBBF92A13031100763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBC1C2A13049600763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBC3E2A1305C500763796 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					83ABBC602A1306FB00763796 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -724,92 +645,21 @@
 			projectRoot = "";
 			targets = (
 				83ABBB072A12C72F00763796 /* 00-window */,
-				71A9C09827349E9000932563 /* 01-primitive */,
-				71A9C0B127349FE900932563 /* 02-argbuffers */,
-				71A9C0CA2734A09B00932563 /* 03-animation */,
-				71A9C0E32734A10200932563 /* 04-instancing */,
-				71A9C0FC2734A17800932563 /* 05-perspective */,
-				71A9C1152734A20200932563 /* 06-lighting */,
-				71A9C12E2734A2A000932563 /* 07-texturing */,
-				71A9C1472734A2F200932563 /* 08-compute */,
-				71A9C1602734A37800932563 /* 09-compute-to-render */,
-				71A9C1792734A3EF00932563 /* 10-frame-debugging */,
-				40B3311727EDA0F30029F74E /* LearnMetalCPP */,
+				83ABBB2D2A12EFC300763796 /* 01-primitive */,
+				83ABBB4F2A12F21600763796 /* 02-argbuffers */,
+				83ABBB712A12FBE200763796 /* 03-animation */,
+				83ABBB932A12FCB600763796 /* 04-instancing */,
+				83ABBBB52A12FDDA00763796 /* 05-perspective */,
+				83ABBBD72A13011700763796 /* 06-lighting */,
+				83ABBBF92A13031100763796 /* 07-texturing */,
+				83ABBC1C2A13049600763796 /* 08-compute */,
+				83ABBC3E2A1305C500763796 /* 09-compute-to-render */,
+				83ABBC602A1306FB00763796 /* 10-frame-debugging */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		71A9C09727349E9000932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0B027349FE900932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0C92734A09B00932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0E22734A10200932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0FB2734A17800932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1142734A20200932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C12D2734A2A000932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1462734A2F200932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C15F2734A37800932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1782734A3EF00932563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		83ABBB062A12C72F00763796 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -819,89 +669,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83ABBB2C2A12EFC300763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB4E2A12F21600763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB702A12FBE200763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB922A12FCB600763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBB42A12FDDA00763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBD62A13011700763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBF82A13031100763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC1B2A13049600763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC3D2A1305C500763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC5F2A1306FB00763796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		71A9C09527349E9000932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0AA27349EB500932563 /* 01-primitive.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0AE27349FE900932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0C32734A00900932563 /* 02-argbuffers.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0C72734A09B00932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0DC2734A0B800932563 /* 03-animation.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0E02734A10200932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C0F52734A12500932563 /* 04-instancing.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C0F92734A17800932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C10E2734A18F00932563 /* 05-perspective.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1122734A20200932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1272734A21F00932563 /* 06-lighting.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C12B2734A2A000932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1402734A2B900932563 /* 07-texturing.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1442734A2F200932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1592734A30B00932563 /* 08-compute.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C15D2734A37800932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C1722734A39300932563 /* 09-compute-to-render.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		71A9C1762734A3EF00932563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71A9C18C2734A42900932563 /* 10-frame-debugging.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		83ABBB042A12C72F00763796 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -910,60 +750,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83ABBB2A2A12EFC300763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBB472A12F0BA00763796 /* 01-primitive.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB4C2A12F21600763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBB692A12F23600763796 /* 02-argbuffers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB6E2A12FBE200763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBB8F2A12FC2700763796 /* 03-animation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBB902A12FCB600763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBBAD2A12FCF900763796 /* 04-instancing.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBB22A12FDDA00763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBBD32A12FECF00763796 /* 05-perspective.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBD42A13011700763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBBF12A13015C00763796 /* 06-lighting.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBBF62A13031100763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC182A1303A600763796 /* 07-texturing.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC192A13049600763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC362A1304EC00763796 /* 08-compute.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC3B2A1305C500763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC5C2A1306A600763796 /* 09-compute-to-render.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ABBC5D2A1306FB00763796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ABBC7E2A13073900763796 /* 10-frame-debugging.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		40B3311E27EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C09827349E9000932563 /* 01-primitive */;
-			targetProxy = 40B3311D27EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312027EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C0B127349FE900932563 /* 02-argbuffers */;
-			targetProxy = 40B3311F27EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312227EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C0CA2734A09B00932563 /* 03-animation */;
-			targetProxy = 40B3312127EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312427EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C0E32734A10200932563 /* 04-instancing */;
-			targetProxy = 40B3312327EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312627EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C0FC2734A17800932563 /* 05-perspective */;
-			targetProxy = 40B3312527EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312827EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C1152734A20200932563 /* 06-lighting */;
-			targetProxy = 40B3312727EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312A27EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C12E2734A2A000932563 /* 07-texturing */;
-			targetProxy = 40B3312927EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312C27EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C1472734A2F200932563 /* 08-compute */;
-			targetProxy = 40B3312B27EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3312E27EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C1602734A37800932563 /* 09-compute-to-render */;
-			targetProxy = 40B3312D27EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-		40B3313027EDA1070029F74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71A9C1792734A3EF00932563 /* 10-frame-debugging */;
-			targetProxy = 40B3312F27EDA1070029F74E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83ABBB182A12C73000763796 /* LaunchScreen.storyboard */ = {
@@ -977,28 +844,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		40B3311927EDA0F30029F74E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Debug;
-		};
-		40B3311A27EDA0F30029F74E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Release;
-		};
 		71A9C06C27349B9100932563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
@@ -1034,6 +879,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1095,6 +941,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1114,688 +961,6 @@
 			};
 			name = Release;
 		};
-		71A9C0A627349E9100932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C0A727349E9100932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C0BF27349FEA00932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C0C027349FEA00932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C0D82734A09C00932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C0D92734A09C00932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C0F12734A10300932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.04-instancing${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C0F22734A10300932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.04-instancing${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C10A2734A17900932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C10B2734A17900932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C1232734A20300932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C1242734A20300932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C13C2734A2A100932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C13D2734A2A100932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C1552734A2F300932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C1562734A2F300932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C16E2734A37800932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C16F2734A37800932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
-		71A9C1872734A3F000932563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_FILE = "learn-metal/$(PRODUCT_NAME)/Info.plist";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Debug;
-		};
-		71A9C1882734A3F000932563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"metal-cpp",
-					"metal-cpp-extensions",
-				);
-				INFOPLIST_FILE = "learn-metal/$(PRODUCT_NAME)/Info.plist";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-			};
-			name = Release;
-		};
 		83ABBB1F2A12C73000763796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1811,7 +976,6 @@
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Window;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1821,8 +985,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.00-window";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.window";
+				PRODUCT_NAME = Window;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1844,7 +1008,6 @@
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Window;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1854,8 +1017,660 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.00-window";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.window";
+				PRODUCT_NAME = Window;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBB452A12EFC400763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.primitive";
+				PRODUCT_NAME = Primitive;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBB462A12EFC400763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.primitive";
+				PRODUCT_NAME = Primitive;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBB672A12F21700763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.argbuffers";
+				PRODUCT_NAME = "Arg Buffers";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBB682A12F21700763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.argbuffers";
+				PRODUCT_NAME = "Arg Buffers";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBB892A12FBE300763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.animation";
+				PRODUCT_NAME = Animation;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBB8A2A12FBE300763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.animation";
+				PRODUCT_NAME = Animation;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBBAB2A12FCB800763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.instancing";
+				PRODUCT_NAME = Instancing;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBBAC2A12FCB800763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.instancing";
+				PRODUCT_NAME = Instancing;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBBCD2A12FDDB00763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.perspective";
+				PRODUCT_NAME = Perspective;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBBCE2A12FDDB00763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.perspective";
+				PRODUCT_NAME = Perspective;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBBEF2A13011800763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.lighting";
+				PRODUCT_NAME = Lighting;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBBF02A13011800763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.lighting";
+				PRODUCT_NAME = Lighting;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBC112A13031200763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.texturing";
+				PRODUCT_NAME = Texturing;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBC122A13031200763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.texturing";
+				PRODUCT_NAME = Texturing;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBC342A13049700763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute";
+				PRODUCT_NAME = Compute;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBC352A13049700763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute";
+				PRODUCT_NAME = Compute;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBC562A1305C600763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute-to-render";
+				PRODUCT_NAME = "Compute Render";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBC572A1305C600763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute-to-render";
+				PRODUCT_NAME = "Compute Render";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ABBC782A1306FC00763796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.frame-debugging";
+				PRODUCT_NAME = Debugging;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83ABBC792A1306FC00763796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.frame-debugging";
+				PRODUCT_NAME = Debugging;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1866,15 +1681,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40B3311827EDA0F30029F74E /* Build configuration list for PBXAggregateTarget "LearnMetalCPP" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				40B3311927EDA0F30029F74E /* Debug */,
-				40B3311A27EDA0F30029F74E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		71A9C05A27349B9000932563 /* Build configuration list for PBXProject "LearnMetalCPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1884,101 +1690,101 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71A9C0A527349E9100932563 /* Build configuration list for PBXNativeTarget "01-primitive" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C0A627349E9100932563 /* Debug */,
-				71A9C0A727349E9100932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C0BE27349FEA00932563 /* Build configuration list for PBXNativeTarget "02-argbuffers" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C0BF27349FEA00932563 /* Debug */,
-				71A9C0C027349FEA00932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C0D72734A09C00932563 /* Build configuration list for PBXNativeTarget "03-animation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C0D82734A09C00932563 /* Debug */,
-				71A9C0D92734A09C00932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C0F02734A10300932563 /* Build configuration list for PBXNativeTarget "04-instancing" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C0F12734A10300932563 /* Debug */,
-				71A9C0F22734A10300932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C1092734A17900932563 /* Build configuration list for PBXNativeTarget "05-perspective" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C10A2734A17900932563 /* Debug */,
-				71A9C10B2734A17900932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C1222734A20300932563 /* Build configuration list for PBXNativeTarget "06-lighting" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C1232734A20300932563 /* Debug */,
-				71A9C1242734A20300932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C13B2734A2A100932563 /* Build configuration list for PBXNativeTarget "07-texturing" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C13C2734A2A100932563 /* Debug */,
-				71A9C13D2734A2A100932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C1542734A2F300932563 /* Build configuration list for PBXNativeTarget "08-compute" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C1552734A2F300932563 /* Debug */,
-				71A9C1562734A2F300932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C16D2734A37800932563 /* Build configuration list for PBXNativeTarget "09-compute-to-render" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C16E2734A37800932563 /* Debug */,
-				71A9C16F2734A37800932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71A9C1862734A3F000932563 /* Build configuration list for PBXNativeTarget "10-frame-debugging" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71A9C1872734A3F000932563 /* Debug */,
-				71A9C1882734A3F000932563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		83ABBB1E2A12C73000763796 /* Build configuration list for PBXNativeTarget "00-window" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83ABBB1F2A12C73000763796 /* Debug */,
 				83ABBB202A12C73000763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBB442A12EFC400763796 /* Build configuration list for PBXNativeTarget "01-primitive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBB452A12EFC400763796 /* Debug */,
+				83ABBB462A12EFC400763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBB662A12F21700763796 /* Build configuration list for PBXNativeTarget "02-argbuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBB672A12F21700763796 /* Debug */,
+				83ABBB682A12F21700763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBB882A12FBE300763796 /* Build configuration list for PBXNativeTarget "03-animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBB892A12FBE300763796 /* Debug */,
+				83ABBB8A2A12FBE300763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBBAA2A12FCB800763796 /* Build configuration list for PBXNativeTarget "04-instancing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBBAB2A12FCB800763796 /* Debug */,
+				83ABBBAC2A12FCB800763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBBCC2A12FDDB00763796 /* Build configuration list for PBXNativeTarget "05-perspective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBBCD2A12FDDB00763796 /* Debug */,
+				83ABBBCE2A12FDDB00763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBBEE2A13011800763796 /* Build configuration list for PBXNativeTarget "06-lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBBEF2A13011800763796 /* Debug */,
+				83ABBBF02A13011800763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBC102A13031200763796 /* Build configuration list for PBXNativeTarget "07-texturing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBC112A13031200763796 /* Debug */,
+				83ABBC122A13031200763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBC332A13049700763796 /* Build configuration list for PBXNativeTarget "08-compute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBC342A13049700763796 /* Debug */,
+				83ABBC352A13049700763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBC552A1305C600763796 /* Build configuration list for PBXNativeTarget "09-compute-to-render" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBC562A1305C600763796 /* Debug */,
+				83ABBC572A1305C600763796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ABBC772A1306FC00763796 /* Build configuration list for PBXNativeTarget "10-frame-debugging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ABBC782A1306FC00763796 /* Debug */,
+				83ABBC792A1306FC00763796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

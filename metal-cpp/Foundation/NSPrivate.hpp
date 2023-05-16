@@ -74,6 +74,7 @@ namespace Private
         _NS_PRIVATE_DEF_CLS(NSDate);
         _NS_PRIVATE_DEF_CLS(NSDictionary);
         _NS_PRIVATE_DEF_CLS(NSError);
+        _NS_PRIVATE_DEF_CLS(NSFileManager);
         _NS_PRIVATE_DEF_CLS(NSNumber);
         _NS_PRIVATE_DEF_CLS(NSObject);
         _NS_PRIVATE_DEF_CLS(NSProcessInfo);
@@ -179,6 +180,8 @@ namespace Private
             "disableSuddenTermination");
         _NS_PRIVATE_DEF_SEL(debugDescription,
             "debugDescription");
+        _NS_PRIVATE_DEF_SEL(defaultManager,
+            "defaultManager");
         _NS_PRIVATE_DEF_SEL(description,
             "description");
         _NS_PRIVATE_DEF_SEL(dictionary,
@@ -379,6 +382,8 @@ namespace Private
             "operatingSystemVersion");
         _NS_PRIVATE_DEF_SEL(operatingSystemVersionString,
             "operatingSystemVersionString");
+        _NS_PRIVATE_DEF_SEL(path,
+            "path");
         _NS_PRIVATE_DEF_SEL(pathForAuxiliaryExecutable_,
             "pathForAuxiliaryExecutable:");
         _NS_PRIVATE_DEF_SEL(performActivityWithOptions_reason_usingBlock_,
@@ -471,6 +476,8 @@ namespace Private
             "userInfo");
         _NS_PRIVATE_DEF_SEL(userName,
             "userName");
+        _NS_PRIVATE_DEF_SEL(URLsForDirectory_inDomains_,
+            "URLsForDirectory:inDomains:");
         _NS_PRIVATE_DEF_SEL(UTF8String,
             "UTF8String");
         _NS_PRIVATE_DEF_SEL(valueWithBytes_objCType_,
