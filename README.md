@@ -1,6 +1,6 @@
 # Learning Metal with metal-cpp
 
-Learn Metal using **metal-cpp**.
+Learn Metal using **metal-cpp**, on iOS.
 
 ## Overview
 
@@ -30,7 +30,7 @@ The project demonstrates how to incrementally achieve the following tasks:
 
 These samples include the **metal-cpp** and **metal-cpp-extensions** libraries.
 
-Use either the included Xcode project or the UNIX make utility to build the project.
+Use the included Xcode project to build the project.
 
 This project requires C++17 support (available since Xcode 9.3).
 
@@ -38,34 +38,22 @@ This project requires C++17 support (available since Xcode 9.3).
 
 Open the `LearnMetalCPP.xcodeproj` project with Xcode.
 
-The project contains a target for each sample and an aggregate target to build them all at once. Use the scheme drop-down menu next to the "Run" button to select which sample to build and run.
-
-## Building with Make
-
-To build the samples using a Makefile, open the terminal and run the `make` command. The build process will put the executables into the `build/` folder.
-
-By default, the Makefile compiles the source with the `-O2` optimization level. Pass the following options to make change the build configuration:
-
-* `DEBUG=1` : disable optimizations and include symbols (`-g`).
-* `ASAN=1` : build with address sanitizer support (`-fsanitize=address`).
+The project contains a target for each sample. Use the scheme drop-down menu next to the "Run" button to select which sample to build and run on your device or in the iOS Simulator.
 
 ## Sample 0: Create a Window for Metal Rendering
 
-The `00-window` sample shows how to create a macOS application with a window capable of displaying content drawn using Metal. This sample clears the contents of the window to a solid red color.
+The `00-window` sample shows how to create an iOS application with a window capable of displaying content drawn using Metal. This sample clears the contents of the window to a solid red color.
 
 The program starts in the `main` function.
 
 ``` other
-MyAppDelegate del;
-
-NS::Application* pSharedApplication = NS::Application::sharedApplication();
-pSharedApplication->setDelegate( &del );
-pSharedApplication->run();
+    MyAppDelegate del;
+    UI::ApplicationMain(argc, argv, &del);
 ```
 
-In order to create the window, the app obtains the global shared application object and sets a custom application delegate (an instance of a subclass of `NS::ApplicationDelegate`). The delegate receives notifications of system events and, in particular, responds when the application has finished launching and is ready to create its window.
+In order to create the window, the app calls the `UI::ApplicationMain` entry point, passing a custom application delegate (an instance of a subclass of `UI::ApplicationDelegate`). The delegate receives notifications of system events and, in particular, responds when the application has finished launching and is ready to create its window.
 
-The notification of this event arrives in the `applicationDidFinishLaunching()` method. The sample overrides this method and creates the window, a menu, and the Metal-capable content view.
+The notification of this event arrives in the `applicationDidFinishLaunching()` method. The sample overrides this method and creates the window and the Metal-capable content view.
 
 The sample uses the `MTK::View` class to display Metal content in a window. `MTK::View` also provides a runtime loop that triggers rendering at a regular cadence. The `applicationDidFinishLaunching()` method initializes the view with a `CGRect` describing its dimensions and a `MTL::Device` object, a software representation of the system's GPU. This method also specifies a pixel format for the view's drawable render target and sets a color with which to clear the drawable each frame.
 
@@ -185,24 +173,19 @@ The renderer creates buffer objects to store each of these arrays.
 const size_t positionsDataSize = NumVertices * sizeof( simd::float3 );
 const size_t colorDataSize = NumVertices * sizeof( simd::float3 );
 
-MTL::Buffer* pVertexPositionsBuffer = _pDevice->newBuffer( positionsDataSize, MTL::ResourceStorageModeManaged );
-MTL::Buffer* pVertexColorsBuffer = _pDevice->newBuffer( colorDataSize, MTL::ResourceStorageModeManaged );
+MTL::Buffer* pVertexPositionsBuffer = _pDevice->newBuffer( positionsDataSize, MTL::ResourceStorageModeShared );
+MTL::Buffer* pVertexColorsBuffer = _pDevice->newBuffer( colorDataSize, MTL::ResourceStorageModeShared );
 
 _pVertexPositionsBuffer = pVertexPositionsBuffer;
 _pVertexColorsBuffer = pVertexColorsBuffer;
 ```
 
-The renderer creates these buffers using `MTL::ResourceStorageModeManaged`. This indicates that both the CPU and GPU can directly access the contents of the buffer. This allows the renderer to fill the buffers' contents with the arrays by calling `memcpy()`.
+The renderer creates these buffers using `MTL::ResourceStorageModeShared`. This indicates that both the CPU and GPU can directly access the contents of the buffer. This allows the renderer to fill the buffers' contents with the arrays by calling `memcpy()`.
 
 ``` other
 memcpy( _pVertexPositionsBuffer->contents(), positions, positionsDataSize );
 memcpy( _pVertexColorsBuffer->contents(), colors, colorDataSize );
-
-_pVertexPositionsBuffer->didModifyRange( NS::Range::Make( 0, _pVertexPositionsBuffer->length() ) );
-_pVertexColorsBuffer->didModifyRange( NS::Range::Make( 0, _pVertexColorsBuffer->length() ) );
 ```
-
-The renderer indicates to Metal that the CPU has written data to the buffer contents by calling the buffers' `didModifyRange()` method.
 
 Once the renderer creates the render pipeline and buffer objects, it can begin encoding commands to draw the triangle. This sample extends upon the previous sample's `draw()` function by explicitly encoding commands to do this.
 
@@ -245,7 +228,7 @@ MTL::ArgumentEncoder* pArgEncoder = pVertexFn->newArgumentEncoder( 0 );
 The encoder object interprets a parameter's memory requirements and layout based on the parameter's type. Using the value returned by the encoder's `encodedLength()` method, the renderer creates an argument buffer. This ensures the buffer is large enough to encode arguments into.
 
 ``` other
-MTL::Buffer* pArgBuffer = _pDevice->newBuffer( pArgEncoder->encodedLength(), MTL::ResourceStorageModeManaged );
+MTL::Buffer* pArgBuffer = _pDevice->newBuffer( pArgEncoder->encodedLength(), MTL::ResourceStorageModeShared );
 ```
 
 The renderer then binds the argument buffer to the argument encoder via the `setArgumentBuffer()` method. This specifies the destination to which the encoder writes the object references.
@@ -314,7 +297,7 @@ Metal provides a convenient method to pass small amounts of data to shaders via 
 ``` other
 for ( int i = 0; i < Renderer::kMaxFramesInFlight; ++i )
 {
-    _pFrameData[ i ]= _pDevice->newBuffer( sizeof( FrameData ), MTL::ResourceStorageModeManaged );
+    _pFrameData[ i ]= _pDevice->newBuffer( sizeof( FrameData ), MTL::ResourceStorageModeShared );
 }
 ```
 
@@ -350,11 +333,10 @@ pCmd->addCompletedHandler( ^void( MTL::CommandBuffer* pCmd ){
 
 Completed handlers are closures that Metal invokes when the GPU completes execution of the command buffer. The renderer sets up this completed handler to call  `dispatch_semaphore_signal()`. 
 
-Once the renderer has a buffer it can safely use, it overwrites the buffer’s contents with a new value. Because these are managed storage buffers, the sample must notify Metal of the content change.
+Once the renderer has a buffer it can safely use, it overwrites the buffer’s contents with a new value.
 
 ``` other
 reinterpret_cast< FrameData * >( pFrameDataBuffer->contents() )->angle = (_angle += 0.01f);
-pFrameDataBuffer->didModifyRange( NS::Range::Make( 0, sizeof( FrameData ) ) );
 ```
 
 Finally, to implement the animation, the sample extends the vertex shader to retrieve the angle variable, calculate the rotation matrix, and transform the vertex positions.
@@ -379,7 +361,7 @@ The renderer provides each instance with a unique value for positions and colors
 ``` other
 for ( size_t i = 0; i < kMaxFramesInFlight; ++i )
 {
-    _pInstanceDataBuffer[ i ] = _pDevice->newBuffer( instanceDataSize, MTL::ResourceStorageModeManaged );
+    _pInstanceDataBuffer[ i ] = _pDevice->newBuffer( instanceDataSize, MTL::ResourceStorageModeShared );
 }
 ```
 
@@ -481,9 +463,8 @@ Before rendering each frame, the `draw()` method computes the camera's matrices 
 ``` other
 MTL::Buffer* pCameraDataBuffer = _pCameraDataBuffer[ _frame ];
 shader_types::CameraData* pCameraData = reinterpret_cast< shader_types::CameraData *>( pCameraDataBuffer->contents() );
-pCameraData->perspectiveTransform = math::makePerspective( 45.f * M_PI / 180.f, 1.f, 0.03f, 500.0f ) ;
+pCameraData->perspectiveTransform = math::makePerspective( 45.f * M_PI / 180.f, aspectRatio, 0.03f, 500.0f ) ;
 pCameraData->worldTransform = math::makeIdentity();
-pCameraDataBuffer->didModifyRange( NS::Range::Make( 0, sizeof( shader_types::CameraData ) ) );
 ```
 
 The vertex shader multiplies the 3D vertex positions by these matrices to compute a position to output for each vertex.
@@ -605,7 +586,7 @@ pTextureDesc->setWidth( tw );
 pTextureDesc->setHeight( th );
 pTextureDesc->setPixelFormat( MTL::PixelFormatRGBA8Unorm );
 pTextureDesc->setTextureType( MTL::TextureType2D );
-pTextureDesc->setStorageMode( MTL::StorageModeManaged );
+pTextureDesc->setStorageMode( MTL::StorageModeShared );
 pTextureDesc->setUsage( MTL::ResourceUsageSample | MTL::ResourceUsageRead );
 
 MTL::Texture *pTexture = _pDevice->newTexture( pTextureDesc );
@@ -788,7 +769,7 @@ This ensures the results are correct, without the need to implement any GPU time
 
 The `10-frame-debugging` sample builds on the previous one by adding functionality to ease debugging of the Metal code. Specifically, the sample generates a *GPU frame capture*, which is a recording of Metal state and commands that you can examine in Xcode.
 
-This sample triggers a capture under two different conditions: via a menu item, or after a short timeout. In both cases, the sample uses a `MTL::CaptureManager` object to begin the capture from within the renderer's `triggerCapture()` method. The method begins by obtaining the global capture manager and checking if the device supports capturing Metal commands:
+This sample triggers a capture after a short timeout. The sample uses a `MTL::CaptureManager` object to begin the capture from within the renderer's `triggerCapture()` method. The method begins by obtaining the global capture manager and checking if the device supports capturing Metal commands:
 
 ``` other
 MTL::CaptureManager* pCaptureManager = MTL::CaptureManager::sharedCaptureManager();
@@ -804,13 +785,9 @@ A device will only support capturing Metal commands if the application's Info.pl
 </dict>
 ```
 
-For applications built as part of a bundle, Xcode embeds plists at build time. However apps, such as this sample, which are not part of a bundle, must explicitly link the plist file using the clang linker. The Makefile included with these samples uses the following linker flag to link the plist to this sample's executable.
+For applications built as part of a bundle, Xcode embeds plists at build time. Each iOS target in this sample refers to an Info.plist that explicitly enables Metal capture commands.
 
-```
-sectcreate __TEXT __info_plist ./10-frame-debugging/Info.plist
-```
-
-Next, the renderer creates a `MTL::CaptureDescriptor` object. Here, it specifies that Metal should write the capture data to a file and designates where the file should appear.  It also specifies that Metal should capture all commands executed by the device.   
+The renderer creates a `MTL::CaptureDescriptor` object. Here, it specifies that Metal should write the capture data to a file and designates where the file should appear.  It also specifies that Metal should capture all commands executed by the device.   
 
 ``` other
 MTL::CaptureDescriptor* pCaptureDescriptor = MTL::CaptureDescriptor::alloc()->init();
