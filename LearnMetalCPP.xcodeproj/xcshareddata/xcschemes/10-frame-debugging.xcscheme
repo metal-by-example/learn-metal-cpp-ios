@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "71A9C1792734A3EF00932563"
-               BuildableName = "10-frame-debugging.app"
+               BlueprintIdentifier = "83ABBC602A1306FB00763796"
+               BuildableName = "Debugging.app"
                BlueprintName = "10-frame-debugging"
                ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
             </BuildableReference>
@@ -44,8 +44,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71A9C1792734A3EF00932563"
-            BuildableName = "10-frame-debugging.app"
+            BlueprintIdentifier = "83ABBC602A1306FB00763796"
+            BuildableName = "Debugging.app"
             BlueprintName = "10-frame-debugging"
             ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
@@ -61,8 +61,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71A9C1792734A3EF00932563"
-            BuildableName = "10-frame-debugging.app"
+            BlueprintIdentifier = "83ABBC602A1306FB00763796"
+            BuildableName = "Debugging.app"
             BlueprintName = "10-frame-debugging"
             ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
