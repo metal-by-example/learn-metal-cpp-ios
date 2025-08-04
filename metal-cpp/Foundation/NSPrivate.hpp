@@ -2,7 +2,7 @@
 //
 // Foundation/NSPrivate.hpp
 //
-// Copyright 2020-2021 Apple Inc.
+// Copyright 2020-2024 Apple Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -33,28 +33,55 @@
 
 #if defined(NS_PRIVATE_IMPLEMENTATION)
 
+#include <dlfcn.h>
+
+namespace NS::Private
+{
+    template <typename _Type>
+    inline _Type const LoadSymbol(const char* pSymbol)
+    {
+        const _Type* pAddress = static_cast<_Type*>(dlsym(RTLD_DEFAULT, pSymbol));
+
+        return pAddress ? *pAddress : _Type();
+    }
+} // NS::Private
+
+#ifdef METALCPP_SYMBOL_VISIBILITY_HIDDEN
+#define _NS_PRIVATE_VISIBILITY __attribute__((visibility("hidden")))
+#else
 #define _NS_PRIVATE_VISIBILITY __attribute__((visibility("default")))
+#endif // METALCPP_SYMBOL_VISIBILITY_HIDDEN
+
 #define _NS_PRIVATE_IMPORT __attribute__((weak_import))
 
-#if __OBJC__
+#ifdef __OBJC__
 #define _NS_PRIVATE_OBJC_LOOKUP_CLASS(symbol) ((__bridge void*)objc_lookUpClass(#symbol))
+#define _NS_PRIVATE_OBJC_GET_PROTOCOL(symbol) ((__bridge void*)objc_getProtocol(#symbol))
 #else
 #define _NS_PRIVATE_OBJC_LOOKUP_CLASS(symbol) objc_lookUpClass(#symbol)
+#define _NS_PRIVATE_OBJC_GET_PROTOCOL(symbol) objc_getProtocol(#symbol)
 #endif // __OBJC__
 
-#define _NS_PRIVATE_DEF_CLS(symbol) void* s_k##symbol _NS_PRIVATE_VISIBILITY = _NS_PRIVATE_OBJC_LOOKUP_CLASS(symbol);
-#define _NS_PRIVATE_DEF_PRO(symbol)
-#define _NS_PRIVATE_DEF_SEL(accessor, symbol) SEL s_k##accessor _NS_PRIVATE_VISIBILITY = sel_registerName(symbol);
+#define _NS_PRIVATE_DEF_CLS(symbol) void* s_k##symbol _NS_PRIVATE_VISIBILITY = _NS_PRIVATE_OBJC_LOOKUP_CLASS(symbol)
+#define _NS_PRIVATE_DEF_PRO(symbol) void* s_k##symbol _NS_PRIVATE_VISIBILITY = _NS_PRIVATE_OBJC_GET_PROTOCOL(symbol)
+#define _NS_PRIVATE_DEF_SEL(accessor, symbol) SEL s_k##accessor _NS_PRIVATE_VISIBILITY = sel_registerName(symbol)
+
+#if defined(__MAC_15_0) || defined(__IPHONE_18_0) || defined(__TVOS_18_0)
 #define _NS_PRIVATE_DEF_CONST(type, symbol)              \
     _NS_EXTERN type const NS##symbol _NS_PRIVATE_IMPORT; \
-    type const                       NS::symbol = (nullptr != &NS##symbol) ? NS##symbol : nullptr;
+    type const                       NS::symbol = (nullptr != &NS##symbol) ? NS##symbol : type()
+#else
+#define _NS_PRIVATE_DEF_CONST(type, symbol) \
+    _NS_EXTERN type const MTL##symbol _NS_PRIVATE_IMPORT; \
+    type const             NS::symbol = Private::LoadSymbol<type>("NS" #symbol)
+#endif
 
 #else
 
-#define _NS_PRIVATE_DEF_CLS(symbol) extern void* s_k##symbol;
-#define _NS_PRIVATE_DEF_PRO(symbol)
-#define _NS_PRIVATE_DEF_SEL(accessor, symbol) extern SEL s_k##accessor;
-#define _NS_PRIVATE_DEF_CONST(type, symbol)
+#define _NS_PRIVATE_DEF_CLS(symbol) extern void* s_k##symbol
+#define _NS_PRIVATE_DEF_PRO(symbol) extern void* s_k##symbol
+#define _NS_PRIVATE_DEF_SEL(accessor, symbol) extern SEL s_k##accessor
+#define _NS_PRIVATE_DEF_CONST(type, symbol) extern type const NS::symbol
 
 #endif // NS_PRIVATE_IMPLEMENTATION
 
@@ -75,9 +102,11 @@ namespace Private
         _NS_PRIVATE_DEF_CLS(NSDictionary);
         _NS_PRIVATE_DEF_CLS(NSError);
         _NS_PRIVATE_DEF_CLS(NSFileManager);
+        _NS_PRIVATE_DEF_CLS(NSNotificationCenter);
         _NS_PRIVATE_DEF_CLS(NSNumber);
         _NS_PRIVATE_DEF_CLS(NSObject);
         _NS_PRIVATE_DEF_CLS(NSProcessInfo);
+        _NS_PRIVATE_DEF_CLS(NSSet);
         _NS_PRIVATE_DEF_CLS(NSString);
         _NS_PRIVATE_DEF_CLS(NSURL);
         _NS_PRIVATE_DEF_CLS(NSValue);
@@ -110,6 +139,8 @@ namespace Private
 
         _NS_PRIVATE_DEF_SEL(addObject_,
             "addObject:");
+        _NS_PRIVATE_DEF_SEL(addObserverName_object_queue_block_,
+            "addObserverForName:object:queue:usingBlock:");
         _NS_PRIVATE_DEF_SEL(activeProcessorCount,
             "activeProcessorCount");
         _NS_PRIVATE_DEF_SEL(allBundles,
@@ -154,6 +185,8 @@ namespace Private
             "bundleWithPath:");
         _NS_PRIVATE_DEF_SEL(bundleWithURL_,
             "bundleWithURL:");
+        _NS_PRIVATE_DEF_SEL(caseInsensitiveCompare_,
+            "caseInsensitiveCompare:");
         _NS_PRIVATE_DEF_SEL(characterAtIndex_,
             "characterAtIndex:");
         _NS_PRIVATE_DEF_SEL(charValue,
@@ -172,6 +205,8 @@ namespace Private
             "count");
         _NS_PRIVATE_DEF_SEL(dateWithTimeIntervalSinceNow_,
             "dateWithTimeIntervalSinceNow:");
+        _NS_PRIVATE_DEF_SEL(defaultCenter,
+            "defaultCenter");
         _NS_PRIVATE_DEF_SEL(descriptionWithLocale_,
             "descriptionWithLocale:");
         _NS_PRIVATE_DEF_SEL(disableAutomaticTermination_,
@@ -224,6 +259,8 @@ namespace Private
             "globallyUniqueString");
         _NS_PRIVATE_DEF_SEL(hash,
             "hash");
+        _NS_PRIVATE_DEF_SEL(hasPerformanceProfile_,
+            "hasPerformanceProfile:");
         _NS_PRIVATE_DEF_SEL(hostName,
             "hostName");
         _NS_PRIVATE_DEF_SEL(infoDictionary,
@@ -282,6 +319,8 @@ namespace Private
             "integerValue");
         _NS_PRIVATE_DEF_SEL(intValue,
             "intValue");
+        _NS_PRIVATE_DEF_SEL(isDeviceCertified_,
+            "isDeviceCertifiedFor:");
         _NS_PRIVATE_DEF_SEL(isEqual_,
             "isEqual:");
         _NS_PRIVATE_DEF_SEL(isEqualToNumber_,
@@ -372,6 +411,8 @@ namespace Private
             "object");
         _NS_PRIVATE_DEF_SEL(objectAtIndex_,
             "objectAtIndex:");
+        _NS_PRIVATE_DEF_SEL(objectEnumerator,
+            "objectEnumerator");
         _NS_PRIVATE_DEF_SEL(objectForInfoDictionaryKey_,
             "objectForInfoDictionaryKey:");
         _NS_PRIVATE_DEF_SEL(objectForKey_,
@@ -412,6 +453,8 @@ namespace Private
             "rangeOfString:options:");
         _NS_PRIVATE_DEF_SEL(release,
             "release");
+        _NS_PRIVATE_DEF_SEL(removeObserver_,
+            "removeObserver:");
         _NS_PRIVATE_DEF_SEL(resourcePath,
             "resourcePath");
         _NS_PRIVATE_DEF_SEL(resourceURL,
