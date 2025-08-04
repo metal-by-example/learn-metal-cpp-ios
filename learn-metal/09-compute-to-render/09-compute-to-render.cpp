@@ -644,10 +644,17 @@ void Renderer::generateMandelbrotTexture( MTL::CommandBuffer* pCommandBuffer )
 
     MTL::Size gridSize = MTL::Size( kTextureWidth, kTextureHeight, 1 );
 
-    NS::UInteger threadGroupSize = _pComputePSO->maxTotalThreadsPerThreadgroup();
-    MTL::Size threadgroupSize( threadGroupSize, 1, 1 );
+    if (_pDevice->supportsFamily(MTL::GPUFamily::GPUFamilyApple4)) {
+        NS::UInteger threadGroupSize = _pComputePSO->maxTotalThreadsPerThreadgroup();
+        MTL::Size threadgroupSize( threadGroupSize, 1, 1 );
 
-    pComputeEncoder->dispatchThreads( gridSize, threadgroupSize );
+        pComputeEncoder->dispatchThreads( gridSize, threadgroupSize );
+    } else {
+        MTL::Size threadgroupSize( 8, 4, 1 );
+        MTL::Size threadgroupCount = MTL::Size( gridSize.width / threadgroupSize.width, gridSize.height / threadgroupSize.height, 1 );
+
+        pComputeEncoder->dispatchThreadgroups( threadgroupCount, threadgroupSize );
+    }
 
     pComputeEncoder->endEncoding();
 }
