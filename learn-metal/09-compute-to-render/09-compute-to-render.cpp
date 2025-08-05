@@ -99,10 +99,16 @@ class MyMTKViewDelegate : public MTK::ViewDelegate
 class MyAppDelegate : public UI::ApplicationDelegate
 {
     public:
-        ~MyAppDelegate();
-
         bool applicationDidFinishLaunching( UI::Application *pApp, NS::Value *options ) override;
         void applicationWillTerminate( UI::Application *pApp ) override;
+};
+
+class MySceneDelegate: public UI::SceneDelegate
+{
+    public:
+        ~MySceneDelegate();
+
+        void sceneWillConnectToSession( UI::Scene *scene, UI::SceneSession *session, UI::SceneConnectionOptions *options ) override;
 
     private:
         UI::Window* _pWindow;
@@ -111,6 +117,9 @@ class MyAppDelegate : public UI::ApplicationDelegate
         MTL::Device* _pDevice;
         MyMTKViewDelegate* _pViewDelegate = nullptr;
 };
+
+// Make this class available for runtime lookup in Obj-C.
+UI_DEF_SCENE_DELEGATE(MySceneDelegate)
 
 #pragma endregion Declarations }
 
@@ -129,7 +138,21 @@ int main( int argc, char* argv[] )
 #pragma mark - AppDelegate
 #pragma region AppDelegate {
 
-MyAppDelegate::~MyAppDelegate()
+bool MyAppDelegate::applicationDidFinishLaunching( UI::Application *pApp, NS::Value *options )
+{
+    return true;
+}
+
+void MyAppDelegate::applicationWillTerminate( UI::Application *pApp )
+{
+}
+
+#pragma endregion AppDelegate }
+
+#pragma mark - SceneDelegate
+#pragma region SceneDelegate {
+
+MySceneDelegate::~MySceneDelegate()
 {
     _pMtkView->release();
     _pWindow->release();
@@ -138,16 +161,16 @@ MyAppDelegate::~MyAppDelegate()
     delete _pViewDelegate;
 }
 
-bool MyAppDelegate::applicationDidFinishLaunching( UI::Application *pApp, NS::Value *options )
+void MySceneDelegate::sceneWillConnectToSession( UI::Scene *scene, UI::SceneSession *session, UI::SceneConnectionOptions *options )
 {
-    CGRect frame = UI::Screen::mainScreen()->bounds();
-
-    _pWindow = UI::Window::alloc()->init(frame);
+    auto windowScene = reinterpret_cast<UI::WindowScene *>(scene);
+    _pWindow = UI::Window::alloc()->init(windowScene);
 
     _pViewController = UI::ViewController::alloc()->init( nil, nil );
 
     _pDevice = MTL::CreateSystemDefaultDevice();
 
+    CGRect frame = windowScene->screen()->bounds();
     _pMtkView = MTK::View::alloc()->init( frame, _pDevice );
     _pMtkView->setColorPixelFormat( MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB );
     _pMtkView->setClearColor( MTL::ClearColor::Make( 0.1, 0.1, 0.1, 1.0 ) );
@@ -163,16 +186,9 @@ bool MyAppDelegate::applicationDidFinishLaunching( UI::Application *pApp, NS::Va
     _pWindow->setRootViewController( _pViewController );
 
     _pWindow->makeKeyAndVisible();
-
-    return true;
 }
 
-void MyAppDelegate::applicationWillTerminate( UI::Application *pApp )
-{
-}
-
-#pragma endregion AppDelegate }
-
+#pragma endregion SceneDelegate }
 
 #pragma mark - ViewDelegate
 #pragma region ViewDelegate {
