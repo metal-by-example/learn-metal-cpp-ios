@@ -11,6 +11,7 @@
 #include <Foundation/Foundation.hpp>
 #include "UIKitPrivate.hpp"
 #include "UIApplication.hpp"
+#include "UIScene.hpp"
 #include "UIScreen.hpp"
 #include "UIView.hpp"
 #include "UIViewController.hpp"

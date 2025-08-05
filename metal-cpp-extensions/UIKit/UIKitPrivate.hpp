@@ -46,10 +46,14 @@ type const UI::symbol = ( nullptr != &UI ## symbol ) ? UI ## symbol : nullptr;
 namespace UI::Private::Class {
 
 _UI_PRIVATE_DEF_CLS( UIApplication );
+_UI_PRIVATE_DEF_CLS( UIScene );
+_UI_PRIVATE_DEF_CLS( UISceneConfiguration );
+_UI_PRIVATE_DEF_CLS( UISceneSession );
 _UI_PRIVATE_DEF_CLS( UIScreen );
 _UI_PRIVATE_DEF_CLS( UIView );
 _UI_PRIVATE_DEF_CLS( UIViewController );
 _UI_PRIVATE_DEF_CLS( UIWindow );
+_UI_PRIVATE_DEF_CLS( UIWindowScene );
 
 } // Class
 
@@ -61,6 +65,9 @@ namespace UI::Private::Selector
 _UI_PRIVATE_DEF_SEL( addSubview_,
                     "addSubview:" );
 
+_UI_PRIVATE_DEF_SEL( application_configurationForConnectingSceneSession_options_,
+                    "application:configurationForConnectingSceneSession:options:" );
+
 _UI_PRIVATE_DEF_SEL( applicationDidFinishLaunching_withOptions_,
                     "applicationDidFinishLaunching:withOptions:" );
 
@@ -70,11 +77,23 @@ _UI_PRIVATE_DEF_SEL( applicationWillTerminate_,
 _UI_PRIVATE_DEF_SEL( bounds,
                     "bounds" );
 
+_UI_PRIVATE_DEF_SEL( configurationWithName_sessionRole_,
+                    "configurationWithName:sessionRole:");
+
 _UI_PRIVATE_DEF_SEL( initWithFrame_,
                     "initWithFrame:" );
 
 _UI_PRIVATE_DEF_SEL( initWithNibName_bundle_,
                     "initWithNibName:bundle:" );
+
+_UI_PRIVATE_DEF_SEL( initWithName_sessionRole_,
+                    "initWithName:sessionRole:" );
+
+_UI_PRIVATE_DEF_SEL( initWithWindowScene_,
+                    "initWithWindowScene:" );
+
+_UI_PRIVATE_DEF_SEL( keyWindow,
+                    "keyWindow" );
 
 _UI_PRIVATE_DEF_SEL( mainScreen,
                     "mainScreen" );
@@ -82,11 +101,20 @@ _UI_PRIVATE_DEF_SEL( mainScreen,
 _UI_PRIVATE_DEF_SEL( makeKeyAndVisible,
                     "makeKeyAndVisible" );
 
+_UI_PRIVATE_DEF_SEL( role,
+                    "role" );
+
+_UI_PRIVATE_DEF_SEL( screen,
+                    "screen" );
+
 _UI_PRIVATE_DEF_SEL( setAutoresizingMask_,
                     "setAutoresizingMask:" );
 
 _UI_PRIVATE_DEF_SEL( setDelegate_,
                     "setDelegate:" );
+
+_UI_PRIVATE_DEF_SEL( setKeyWindow_,
+                    "setKeyWindow:" );
 
 _UI_PRIVATE_DEF_SEL( setRootViewController_,
                     "setRootViewController:" );
@@ -96,6 +124,9 @@ _UI_PRIVATE_DEF_SEL( sharedApplication,
 
 _UI_PRIVATE_DEF_SEL( view,
                     "view" );
+
+_UI_PRIVATE_DEF_SEL( windows,
+                    "windows" );
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
