@@ -51,9 +51,9 @@ The program starts in the `main` function.
     UI::ApplicationMain(argc, argv, &del);
 ```
 
-In order to create the window, the app calls the `UI::ApplicationMain` entry point, passing a custom application delegate (an instance of a subclass of `UI::ApplicationDelegate`). The delegate receives notifications of system events and, in particular, responds when the application has finished launching and is ready to create its window.
+To begin the main run loop, the app calls the `UI::ApplicationMain` entry point, passing a custom application delegate (an instance of a subclass of `UI::ApplicationDelegate`). The delegate receives notifications of system events and, in particular, responds when the application has finished launching.
 
-The notification of this event arrives in the `applicationDidFinishLaunching()` method. The sample overrides this method and creates the window and the Metal-capable content view.
+After the application finishes launching, UIKit instantiates a scene delegate object based on the contents of the Application Scene Manifest in the target's Info.plist. This gives the application a chance to instantiate any windows and views it would like to display.
 
 The sample uses the `MTK::View` class to display Metal content in a window. `MTK::View` also provides a runtime loop that triggers rendering at a regular cadence. The `applicationDidFinishLaunching()` method initializes the view with a `CGRect` describing its dimensions and a `MTL::Device` object, a software representation of the system's GPU. This method also specifies a pixel format for the view's drawable render target and sets a color with which to clear the drawable each frame.
 

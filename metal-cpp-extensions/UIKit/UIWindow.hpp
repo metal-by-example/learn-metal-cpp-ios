@@ -17,18 +17,19 @@
 
 namespace UI
 {
-	class Window : public NS::Referencing< Window, UI::View >
-	{
-		public:
-			static Window* alloc();
-			Window* init( CGRect frame );
+    class WindowScene;
 
-            void setRootViewController(UI::ViewController *viewController);
-            void makeKeyAndVisible();
-	};
+    class Window : public NS::Referencing< Window, UI::View >
+    {
+    public:
+        static Window* alloc();
+        Window* init( CGRect frame );
+        Window* init( UI::WindowScene *pScene );
 
+        void setRootViewController(UI::ViewController *viewController);
+        void makeKeyAndVisible();
+    };
 }
-
 
 _NS_INLINE UI::Window* UI::Window::alloc()
 {
@@ -37,15 +38,20 @@ _NS_INLINE UI::Window* UI::Window::alloc()
 
 _NS_INLINE UI::Window* UI::Window::init( CGRect frame )
 {
-	return Object::sendMessage< Window* >( this, _UI_PRIVATE_SEL( initWithFrame_ ), frame );
+    return Object::sendMessage< Window* >( this, _UI_PRIVATE_SEL( initWithFrame_ ), frame );
 }
 
-_NS_INLINE void UI::Window::setRootViewController(UI::ViewController *viewController)
+_NS_INLINE UI::Window* UI::Window::init( UI::WindowScene *pScene )
+{
+    return Object::sendMessage< Window* >( this, _UI_PRIVATE_SEL( initWithWindowScene_ ), pScene );
+}
+
+_NS_INLINE void UI::Window::setRootViewController( UI::ViewController *viewController )
 {
     Object::sendMessage< void >( this, _UI_PRIVATE_SEL( setRootViewController_ ), viewController );
 }
 
 _NS_INLINE void UI::Window::makeKeyAndVisible()
 {
-	Object::sendMessage< void >( this, _UI_PRIVATE_SEL( makeKeyAndVisible ) );
+    Object::sendMessage< void >( this, _UI_PRIVATE_SEL( makeKeyAndVisible ) );
 }

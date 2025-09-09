@@ -21,11 +21,16 @@ extern "C" int UIApplicationMain(int argc, char **, id, id);
 namespace UI
 {
     class Application;
+    class Scene;
+    class SceneConfiguration;
+    class SceneConnectionOptions;
+    class SceneSession;
 
-	class ApplicationDelegate
+    class ApplicationDelegate
 	{
 		public:
 			virtual ~ApplicationDelegate() { }
+            //virtual UI::SceneConfiguration *applicationConfigurationForConnectingSceneSession( UI::Application* pApp, UI::SceneSession *sceneSession, UI::SceneConnectionOptions *options ) = 0;
             virtual bool applicationDidFinishLaunching( UI::Application* pApp, NS::Value *options ) { return true; }
             virtual void applicationWillTerminate( UI::Application* pApp ) { }
 	};
@@ -81,7 +86,16 @@ _NS_INLINE void UI::Application::setDelegate( const ApplicationDelegate* pAppDel
         pDel->applicationWillTerminate(pApplication);
 	};
 
-	class_addMethod( (Class)objc_lookUpClass( "NSValue" ), _UI_PRIVATE_SEL( applicationDidFinishLaunching_withOptions_ ), (IMP)didFinishLaunching, "b@:@@" );
+    // Uncomment this to require application delegate implementations to implement application:configurationForConnectingSceneSession:options:
+    /*
+    typedef id (*ConfigurationForConnectingSceneSessionFunction)(NS::Value*, SEL, UI::Application *, UI::SceneSession *, UI::SceneConnectionOptions *);
+    ConfigurationForConnectingSceneSessionFunction configurationForConnectingSceneSession = [](NS::Value* pSelf, SEL, UI::Application *pApp, UI::SceneSession *pSceneSession, UI::SceneConnectionOptions *pOptions) {
+        auto pDel = reinterpret_cast< UI::ApplicationDelegate* >( pSelf->pointerValue() );
+        return (id)pDel->applicationConfigurationForConnectingSceneSession( pApp, pSceneSession, pOptions );
+    };
+    class_addMethod( (Class)objc_lookUpClass( "NSValue" ), _UI_PRIVATE_SEL( application_configurationForConnectingSceneSession_options_ ), (IMP)configurationForConnectingSceneSession, "@@:@@@" );
+    */
+    class_addMethod( (Class)objc_lookUpClass( "NSValue" ), _UI_PRIVATE_SEL( applicationDidFinishLaunching_withOptions_ ), (IMP)didFinishLaunching, "b@:@@" );
     class_addMethod( (Class)objc_lookUpClass( "NSValue" ), _UI_PRIVATE_SEL( applicationWillTerminate_ ), (IMP)willTerminate, "v@:@");
 
 	Object::sendMessage< void >( this, _UI_PRIVATE_SEL( setDelegate_ ), delegateWrapper );

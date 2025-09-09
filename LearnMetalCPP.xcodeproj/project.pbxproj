@@ -10,67 +10,75 @@
 		83ABBB172A12C73000763796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83ABBB162A12C73000763796 /* Assets.xcassets */; };
 		83ABBB1A2A12C73000763796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ABBB182A12C73000763796 /* LaunchScreen.storyboard */; };
 		83ABBB212A12C73F00763796 /* 00-window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C09227349E3000932563 /* 00-window.cpp */; };
-		83ABBB242A12C74900763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBB252A12C74900763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBB272A12C74E00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
-		83ABBB292A12C75300763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
 		83ABBB472A12F0BA00763796 /* 01-primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0A927349EB500932563 /* 01-primitive.cpp */; };
-		83ABBB482A12F0E400763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBB492A12F0E400763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBB4A2A12F0E900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBB4B2A12F0ED00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBB692A12F23600763796 /* 02-argbuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0C22734A00900932563 /* 02-argbuffers.cpp */; };
-		83ABBB6A2A12F2B000763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBB6B2A12F2B000763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBB6C2A12F2B400763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBB6D2A12F2B800763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
-		83ABBB8B2A12FBF600763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBB8C2A12FBF600763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBB8D2A12FBF900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBB8E2A12FBFF00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBB8F2A12FC2700763796 /* 03-animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0DB2734A0B800932563 /* 03-animation.cpp */; };
 		83ABBBAD2A12FCF900763796 /* 04-instancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C0F42734A12500932563 /* 04-instancing.cpp */; };
-		83ABBBAE2A12FD7D00763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBBAF2A12FD7D00763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBBB02A12FD8400763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBBB12A12FD8800763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
-		83ABBBCF2A12FDF300763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBBD02A12FDF300763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBBD12A12FDFA00763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBBD22A12FDFE00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBBD32A12FECF00763796 /* 05-perspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C10D2734A18F00932563 /* 05-perspective.cpp */; };
 		83ABBBF12A13015C00763796 /* 06-lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1262734A21F00932563 /* 06-lighting.cpp */; };
-		83ABBBF22A13016800763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBBF32A13016800763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBBF42A13016B00763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBBF52A13016F00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
-		83ABBC132A13037F00763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBC142A13037F00763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBC152A13038300763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBC162A13038B00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBC182A1303A600763796 /* 07-texturing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C13F2734A2B900932563 /* 07-texturing.cpp */; };
 		83ABBC362A1304EC00763796 /* 08-compute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1582734A30B00932563 /* 08-compute.cpp */; };
-		83ABBC372A13055700763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBC382A13055700763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBC392A13055A00763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBC3A2A13055D00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
-		83ABBC582A13061500763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBC592A13061500763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBC5A2A13061900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBC5B2A13061C00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBC5C2A1306A600763796 /* 09-compute-to-render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C1712734A39300932563 /* 09-compute-to-render.cpp */; };
-		83ABBC7A2A13072400763796 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB232A12C74900763796 /* Metal.framework */; };
-		83ABBC7B2A13072400763796 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB222A12C74900763796 /* MetalKit.framework */; };
-		83ABBC7C2A13072900763796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB282A12C75300763796 /* UIKit.framework */; };
-		83ABBC7D2A13072D00763796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ABBB262A12C74E00763796 /* Foundation.framework */; };
 		83ABBC7E2A13073900763796 /* 10-frame-debugging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A9C18A2734A42900932563 /* 10-frame-debugging.cpp */; };
+		83E013272E413150004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013282E413150004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E0132A2E413154004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E0132C2E413159004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E0132E2E41315E004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E0132F2E41317C004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E013302E41317C004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E013312E41317C004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E013322E41317C004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013332E41317C004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E013342E413180004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E013352E413180004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E013362E413180004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E013372E413180004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013382E413180004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E013392E413182004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E0133A2E413182004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E0133B2E413182004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E0133C2E413182004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E0133D2E413182004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E0133E2E413184004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E0133F2E413184004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E013402E413184004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E013412E413184004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013422E413184004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E013432E413186004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E013442E413186004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E013452E413186004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E013462E413186004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013472E413186004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E013482E413188004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E013492E413188004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E0134A2E413188004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E0134B2E413188004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E0134C2E413188004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E0134D2E41318A004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E0134E2E41318A004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E0134F2E41318A004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E013502E41318A004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013512E41318A004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E013522E41318C004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E013532E41318C004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E013542E41318C004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E013552E41318C004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013562E41318C004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E013572E41318E004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E013582E41318E004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E013592E41318E004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E0135A2E41318E004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E0135B2E41318E004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
+		83E0135C2E413190004199F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132D2E41315E004199F1 /* UIKit.framework */; };
+		83E0135D2E413190004199F1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0132B2E413159004199F1 /* MetalKit.framework */; };
+		83E0135E2E413190004199F1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013292E413154004199F1 /* Metal.framework */; };
+		83E0135F2E413190004199F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013252E413150004199F1 /* CoreFoundation.framework */; };
+		83E013602E413190004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40B3313227F3B7150029F74E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		71A9C07527349D4200932563 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		71A9C07727349D4500932563 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		71A9C07927349D5500932563 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71A9C09227349E3000932563 /* 00-window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "00-window.cpp"; sourceTree = "<group>"; };
 		71A9C0A927349EB500932563 /* 01-primitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "01-primitive.cpp"; sourceTree = "<group>"; };
 		71A9C0C22734A00900932563 /* 02-argbuffers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "02-argbuffers.cpp"; sourceTree = "<group>"; };
@@ -87,10 +95,6 @@
 		83ABBB082A12C72F00763796 /* Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Window.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBB162A12C73000763796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83ABBB192A12C73000763796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		83ABBB222A12C74900763796 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
-		83ABBB232A12C74900763796 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
-		83ABBB262A12C74E00763796 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		83ABBB282A12C75300763796 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		83ABBB2E2A12EFC300763796 /* Primitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primitive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBB502A12F21600763796 /* Arg Buffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arg Buffers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBB722A12FBE200763796 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,11 @@
 		83ABBC1D2A13049600763796 /* Compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBC3F2A1305C500763796 /* Compute Render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compute Render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBC612A1306FB00763796 /* Debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debugging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E013252E413150004199F1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		83E013262E413150004199F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83E013292E413154004199F1 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		83E0132B2E413159004199F1 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		83E0132D2E41315E004199F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +117,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBB292A12C75300763796 /* UIKit.framework in Frameworks */,
-				83ABBB272A12C74E00763796 /* Foundation.framework in Frameworks */,
-				83ABBB242A12C74900763796 /* MetalKit.framework in Frameworks */,
-				83ABBB252A12C74900763796 /* Metal.framework in Frameworks */,
+				83E0132E2E41315E004199F1 /* UIKit.framework in Frameworks */,
+				83E0132C2E413159004199F1 /* MetalKit.framework in Frameworks */,
+				83E0132A2E413154004199F1 /* Metal.framework in Frameworks */,
+				83E013272E413150004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013282E413150004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,10 +129,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBB482A12F0E400763796 /* Metal.framework in Frameworks */,
-				83ABBB4A2A12F0E900763796 /* UIKit.framework in Frameworks */,
-				83ABBB492A12F0E400763796 /* MetalKit.framework in Frameworks */,
-				83ABBB4B2A12F0ED00763796 /* Foundation.framework in Frameworks */,
+				83E0132F2E41317C004199F1 /* UIKit.framework in Frameworks */,
+				83E013302E41317C004199F1 /* MetalKit.framework in Frameworks */,
+				83E013312E41317C004199F1 /* Metal.framework in Frameworks */,
+				83E013322E41317C004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013332E41317C004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +141,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBB6A2A12F2B000763796 /* Metal.framework in Frameworks */,
-				83ABBB6C2A12F2B400763796 /* UIKit.framework in Frameworks */,
-				83ABBB6B2A12F2B000763796 /* MetalKit.framework in Frameworks */,
-				83ABBB6D2A12F2B800763796 /* Foundation.framework in Frameworks */,
+				83E013342E413180004199F1 /* UIKit.framework in Frameworks */,
+				83E013352E413180004199F1 /* MetalKit.framework in Frameworks */,
+				83E013362E413180004199F1 /* Metal.framework in Frameworks */,
+				83E013372E413180004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013382E413180004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +153,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBB8B2A12FBF600763796 /* Metal.framework in Frameworks */,
-				83ABBB8D2A12FBF900763796 /* UIKit.framework in Frameworks */,
-				83ABBB8C2A12FBF600763796 /* MetalKit.framework in Frameworks */,
-				83ABBB8E2A12FBFF00763796 /* Foundation.framework in Frameworks */,
+				83E013392E413182004199F1 /* UIKit.framework in Frameworks */,
+				83E0133A2E413182004199F1 /* MetalKit.framework in Frameworks */,
+				83E0133B2E413182004199F1 /* Metal.framework in Frameworks */,
+				83E0133C2E413182004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E0133D2E413182004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +165,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBBAE2A12FD7D00763796 /* Metal.framework in Frameworks */,
-				83ABBBB02A12FD8400763796 /* UIKit.framework in Frameworks */,
-				83ABBBAF2A12FD7D00763796 /* MetalKit.framework in Frameworks */,
-				83ABBBB12A12FD8800763796 /* Foundation.framework in Frameworks */,
+				83E0133E2E413184004199F1 /* UIKit.framework in Frameworks */,
+				83E0133F2E413184004199F1 /* MetalKit.framework in Frameworks */,
+				83E013402E413184004199F1 /* Metal.framework in Frameworks */,
+				83E013412E413184004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013422E413184004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,10 +177,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBBCF2A12FDF300763796 /* Metal.framework in Frameworks */,
-				83ABBBD12A12FDFA00763796 /* UIKit.framework in Frameworks */,
-				83ABBBD02A12FDF300763796 /* MetalKit.framework in Frameworks */,
-				83ABBBD22A12FDFE00763796 /* Foundation.framework in Frameworks */,
+				83E013432E413186004199F1 /* UIKit.framework in Frameworks */,
+				83E013442E413186004199F1 /* MetalKit.framework in Frameworks */,
+				83E013452E413186004199F1 /* Metal.framework in Frameworks */,
+				83E013462E413186004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013472E413186004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +189,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBBF22A13016800763796 /* Metal.framework in Frameworks */,
-				83ABBBF42A13016B00763796 /* UIKit.framework in Frameworks */,
-				83ABBBF32A13016800763796 /* MetalKit.framework in Frameworks */,
-				83ABBBF52A13016F00763796 /* Foundation.framework in Frameworks */,
+				83E013482E413188004199F1 /* UIKit.framework in Frameworks */,
+				83E013492E413188004199F1 /* MetalKit.framework in Frameworks */,
+				83E0134A2E413188004199F1 /* Metal.framework in Frameworks */,
+				83E0134B2E413188004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E0134C2E413188004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,10 +201,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBC132A13037F00763796 /* Metal.framework in Frameworks */,
-				83ABBC152A13038300763796 /* UIKit.framework in Frameworks */,
-				83ABBC142A13037F00763796 /* MetalKit.framework in Frameworks */,
-				83ABBC162A13038B00763796 /* Foundation.framework in Frameworks */,
+				83E0134D2E41318A004199F1 /* UIKit.framework in Frameworks */,
+				83E0134E2E41318A004199F1 /* MetalKit.framework in Frameworks */,
+				83E0134F2E41318A004199F1 /* Metal.framework in Frameworks */,
+				83E013502E41318A004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013512E41318A004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +213,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBC372A13055700763796 /* Metal.framework in Frameworks */,
-				83ABBC392A13055A00763796 /* UIKit.framework in Frameworks */,
-				83ABBC382A13055700763796 /* MetalKit.framework in Frameworks */,
-				83ABBC3A2A13055D00763796 /* Foundation.framework in Frameworks */,
+				83E013522E41318C004199F1 /* UIKit.framework in Frameworks */,
+				83E013532E41318C004199F1 /* MetalKit.framework in Frameworks */,
+				83E013542E41318C004199F1 /* Metal.framework in Frameworks */,
+				83E013552E41318C004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013562E41318C004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,10 +225,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBC582A13061500763796 /* Metal.framework in Frameworks */,
-				83ABBC5A2A13061900763796 /* UIKit.framework in Frameworks */,
-				83ABBC592A13061500763796 /* MetalKit.framework in Frameworks */,
-				83ABBC5B2A13061C00763796 /* Foundation.framework in Frameworks */,
+				83E013572E41318E004199F1 /* UIKit.framework in Frameworks */,
+				83E013582E41318E004199F1 /* MetalKit.framework in Frameworks */,
+				83E013592E41318E004199F1 /* Metal.framework in Frameworks */,
+				83E0135A2E41318E004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E0135B2E41318E004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,10 +237,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83ABBC7A2A13072400763796 /* Metal.framework in Frameworks */,
-				83ABBC7C2A13072900763796 /* UIKit.framework in Frameworks */,
-				83ABBC7B2A13072400763796 /* MetalKit.framework in Frameworks */,
-				83ABBC7D2A13072D00763796 /* Foundation.framework in Frameworks */,
+				83E0135C2E413190004199F1 /* UIKit.framework in Frameworks */,
+				83E0135D2E413190004199F1 /* MetalKit.framework in Frameworks */,
+				83E0135E2E413190004199F1 /* Metal.framework in Frameworks */,
+				83E0135F2E413190004199F1 /* CoreFoundation.framework in Frameworks */,
+				83E013602E413190004199F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,13 +299,11 @@
 		71A9C07427349D4100932563 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83ABBB282A12C75300763796 /* UIKit.framework */,
-				83ABBB262A12C74E00763796 /* Foundation.framework */,
-				83ABBB232A12C74900763796 /* Metal.framework */,
-				83ABBB222A12C74900763796 /* MetalKit.framework */,
-				71A9C07927349D5500932563 /* Foundation.framework */,
-				71A9C07527349D4200932563 /* Metal.framework */,
-				71A9C07727349D4500932563 /* MetalKit.framework */,
+				83E0132D2E41315E004199F1 /* UIKit.framework */,
+				83E0132B2E413159004199F1 /* MetalKit.framework */,
+				83E013292E413154004199F1 /* Metal.framework */,
+				83E013252E413150004199F1 /* CoreFoundation.framework */,
+				83E013262E413150004199F1 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -593,7 +611,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1640;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					83ABBB072A12C72F00763796 = {
@@ -881,8 +899,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -897,7 +917,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -943,8 +963,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -953,7 +975,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -969,7 +991,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1001,7 +1022,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1034,7 +1054,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1066,7 +1085,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1099,7 +1117,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1131,7 +1148,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1164,7 +1180,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1196,7 +1211,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1229,7 +1243,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1240,7 +1253,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1262,7 +1274,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1273,7 +1284,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1296,7 +1306,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1328,7 +1337,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1361,7 +1369,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1393,7 +1400,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1426,7 +1432,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1458,7 +1463,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1491,7 +1495,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1523,7 +1526,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1556,7 +1558,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1588,7 +1589,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1621,7 +1621,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
@@ -1653,7 +1652,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
