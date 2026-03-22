@@ -104,8 +104,8 @@ namespace MTK
 			void						setEnableSetNeedsDisplay( bool enableSetNeedsDisplay );
 			bool						enableSetNeedsDisplay() const;
 
-			void						setAutoresizeDrawable( bool autoresizeDrawable );
-			bool						autoresizeDrawable();
+			void						setAutoResizeDrawable( bool autoResizeDrawable );
+			bool						autoResizeDrawable();
 
 			void						setDrawableSize( CGSize drawableSize );
 			CGSize						drawableSize() const;
@@ -341,14 +341,14 @@ _NS_INLINE bool MTK::View::enableSetNeedsDisplay() const
 	return NS::Object::sendMessage< bool >( this, _MTK_PRIVATE_SEL( enableSetNeedsDisplay ) );
 }
 
-_NS_INLINE void MTK::View::setAutoresizeDrawable( bool autoresizeDrawable )
+_NS_INLINE void MTK::View::setAutoResizeDrawable( bool autoResizeDrawable )
 {
-	NS::Object::sendMessage< void >( this, _MTK_PRIVATE_SEL( setAutoresizeDrawable_ ), autoresizeDrawable );
+	NS::Object::sendMessage< void >( this, _MTK_PRIVATE_SEL( setAutoResizeDrawable_ ), autoResizeDrawable );
 }
 
-_NS_INLINE bool MTK::View::autoresizeDrawable()
+_NS_INLINE bool MTK::View::autoResizeDrawable()
 {
-	return NS::Object::sendMessage< bool >( this, _MTK_PRIVATE_SEL( autoresizeDrawable ) );
+	return NS::Object::sendMessage< bool >( this, _MTK_PRIVATE_SEL( autoResizeDrawable ) );
 }
 
 _NS_INLINE void MTK::View::setDrawableSize( CGSize drawableSize )
