@@ -24,6 +24,7 @@
 #include "MTLDefines.hpp"
 #include "MTLHeaderBridge.hpp"
 #include "MTLPrivate.hpp"
+#include "MTLDepthStencil.hpp"
 
 namespace MTL
 {
@@ -66,6 +67,9 @@ public:
 
     void             setComputePipelineState(const MTL::ComputePipelineState* pipeline, NS::UInteger index);
     void             setComputePipelineStates(const MTL::ComputePipelineState* const pipelines[], NS::Range range);
+
+    void             setDepthStencilState(const MTL::DepthStencilState* depthStencilState, NS::UInteger index);
+    void             setDepthStencilStates(const MTL::DepthStencilState* const depthStencilStates[], NS::Range range);
 
     void             setIndirectCommandBuffer(const MTL::IndirectCommandBuffer* indirectCommandBuffer, NS::UInteger index);
     void             setIndirectCommandBuffers(const MTL::IndirectCommandBuffer* const buffers[], NS::Range range);
@@ -153,6 +157,16 @@ _MTL_INLINE void MTL::ArgumentEncoder::setComputePipelineState(const MTL::Comput
 _MTL_INLINE void MTL::ArgumentEncoder::setComputePipelineStates(const MTL::ComputePipelineState* const pipelines[], NS::Range range)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setComputePipelineStates_withRange_), pipelines, range);
+}
+
+_MTL_INLINE void MTL::ArgumentEncoder::setDepthStencilState(const MTL::DepthStencilState* depthStencilState, NS::UInteger index)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthStencilState_atIndex_), depthStencilState, index);
+}
+
+_MTL_INLINE void MTL::ArgumentEncoder::setDepthStencilStates(const MTL::DepthStencilState* const depthStencilStates[], NS::Range range)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthStencilStates_withRange_), depthStencilStates, range);
 }
 
 _MTL_INLINE void MTL::ArgumentEncoder::setIndirectCommandBuffer(const MTL::IndirectCommandBuffer* indirectCommandBuffer, NS::UInteger index)

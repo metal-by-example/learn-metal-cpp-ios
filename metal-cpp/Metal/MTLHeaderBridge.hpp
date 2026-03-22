@@ -866,8 +866,20 @@ _MTL_PRIVATE_DEF_SEL(indirectRenderCommandAtIndex_,
     "indirectRenderCommandAtIndex:");
 _MTL_PRIVATE_DEF_SEL(inheritBuffers,
     "inheritBuffers");
+_MTL_PRIVATE_DEF_SEL(inheritCullMode,
+    "inheritCullMode");
+_MTL_PRIVATE_DEF_SEL(inheritDepthBias,
+    "inheritDepthBias");
+_MTL_PRIVATE_DEF_SEL(inheritDepthClipMode,
+    "inheritDepthClipMode");
+_MTL_PRIVATE_DEF_SEL(inheritDepthStencilState,
+    "inheritDepthStencilState");
+_MTL_PRIVATE_DEF_SEL(inheritFrontFacingWinding,
+    "inheritFrontFacingWinding");
 _MTL_PRIVATE_DEF_SEL(inheritPipelineState,
     "inheritPipelineState");
+_MTL_PRIVATE_DEF_SEL(inheritTriangleFillMode,
+    "inheritTriangleFillMode");
 _MTL_PRIVATE_DEF_SEL(init,
     "init");
 _MTL_PRIVATE_DEF_SEL(initWithArgumentIndex_,
@@ -1018,6 +1030,8 @@ _MTL_PRIVATE_DEF_SEL(locationNumber,
     "locationNumber");
 _MTL_PRIVATE_DEF_SEL(lodAverage,
     "lodAverage");
+_MTL_PRIVATE_DEF_SEL(lodBias,
+    "lodBias");
 _MTL_PRIVATE_DEF_SEL(lodMaxClamp,
     "lodMaxClamp");
 _MTL_PRIVATE_DEF_SEL(lodMinClamp,
@@ -1598,6 +1612,8 @@ _MTL_PRIVATE_DEF_SEL(readWriteTextureSupport,
     "readWriteTextureSupport");
 _MTL_PRIVATE_DEF_SEL(recommendedMaxWorkingSetSize,
     "recommendedMaxWorkingSetSize");
+_MTL_PRIVATE_DEF_SEL(reductionMode,
+    "reductionMode");
 _MTL_PRIVATE_DEF_SEL(refitAccelerationStructure_descriptor_destination_scratchBuffer_,
     "refitAccelerationStructure:descriptor:destination:scratchBuffer:");
 _MTL_PRIVATE_DEF_SEL(refitAccelerationStructure_descriptor_destination_scratchBuffer_options_,
@@ -1918,10 +1934,16 @@ _MTL_PRIVATE_DEF_SEL(setDepthStencilPassOperation_,
     "setDepthStencilPassOperation:");
 _MTL_PRIVATE_DEF_SEL(setDepthStencilState_,
     "setDepthStencilState:");
+_MTL_PRIVATE_DEF_SEL(setDepthStencilState_atIndex_,
+    "setDepthStencilState:atIndex:");
+_MTL_PRIVATE_DEF_SEL(setDepthStencilStates_withRange_,
+    "setDepthStencilStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setDepthStoreAction_,
     "setDepthStoreAction:");
 _MTL_PRIVATE_DEF_SEL(setDepthStoreActionOptions_,
     "setDepthStoreActionOptions:");
+_MTL_PRIVATE_DEF_SEL(setDepthTestMinBound_maxBound_,
+    "setDepthTestMinBound:maxBound:");
 _MTL_PRIVATE_DEF_SEL(setDepthWriteEnabled_,
     "setDepthWriteEnabled:");
 _MTL_PRIVATE_DEF_SEL(setDestination_,
@@ -2042,8 +2064,20 @@ _MTL_PRIVATE_DEF_SEL(setIndirectCommandBuffers_withRange_,
     "setIndirectCommandBuffers:withRange:");
 _MTL_PRIVATE_DEF_SEL(setInheritBuffers_,
     "setInheritBuffers:");
+_MTL_PRIVATE_DEF_SEL(setInheritCullMode_,
+    "setInheritCullMode:");
+_MTL_PRIVATE_DEF_SEL(setInheritDepthBias_,
+    "setInheritDepthBias:");
+_MTL_PRIVATE_DEF_SEL(setInheritDepthClipMode_,
+    "setInheritDepthClipMode:");
+_MTL_PRIVATE_DEF_SEL(setInheritDepthStencilState_,
+    "setInheritDepthStencilState:");
+_MTL_PRIVATE_DEF_SEL(setInheritFrontFacingWinding_,
+    "setInheritFrontFacingWinding:");
 _MTL_PRIVATE_DEF_SEL(setInheritPipelineState_,
     "setInheritPipelineState:");
+_MTL_PRIVATE_DEF_SEL(setInheritTriangleFillMode_,
+    "setInheritTriangleFillMode:");
 _MTL_PRIVATE_DEF_SEL(setInitialCapacity_,
     "setInitialCapacity:");
 _MTL_PRIVATE_DEF_SEL(setInitializeBindings_,
@@ -2112,6 +2146,8 @@ _MTL_PRIVATE_DEF_SEL(setLoadAction_,
     "setLoadAction:");
 _MTL_PRIVATE_DEF_SEL(setLodAverage_,
     "setLodAverage:");
+_MTL_PRIVATE_DEF_SEL(setLodBias_,
+    "setLodBias:");
 _MTL_PRIVATE_DEF_SEL(setLodMaxClamp_,
     "setLodMaxClamp:");
 _MTL_PRIVATE_DEF_SEL(setLodMinClamp_,
@@ -2360,6 +2396,8 @@ _MTL_PRIVATE_DEF_SEL(setRasterizationRateMap_,
     "setRasterizationRateMap:");
 _MTL_PRIVATE_DEF_SEL(setReadMask_,
     "setReadMask:");
+_MTL_PRIVATE_DEF_SEL(setReductionMode_,
+    "setReductionMode:");
 _MTL_PRIVATE_DEF_SEL(setRenderPipelineState_,
     "setRenderPipelineState:");
 _MTL_PRIVATE_DEF_SEL(setRenderPipelineState_atIndex_,

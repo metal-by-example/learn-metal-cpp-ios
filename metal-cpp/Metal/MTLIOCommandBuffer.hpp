@@ -27,6 +27,8 @@
 #include "MTLTypes.hpp"
 #include <cstdint>
 
+#if !TARGET_OS_SIMULATOR
+
 namespace MTL
 {
 class Buffer;
@@ -180,3 +182,5 @@ _MTL_INLINE void MTL::IOCommandBuffer::waitUntilCompleted()
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(waitUntilCompleted));
 }
+
+#endif // !TARGET_OS_SIMULATOR

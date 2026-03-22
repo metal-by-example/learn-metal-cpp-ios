@@ -202,18 +202,18 @@ _MTL_INLINE const MTL::PackedFloat3& MTL::PackedFloat4x3::operator[](int idx) co
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#if __clang_major__ >= 16
+#if __apple_build_version__ > 16000026
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnan-infinity-disabled"
-#endif // __clang_major__ >= 16
+#endif // __apple_build_version__ > 16000026
 _MTL_INLINE MTL::AxisAlignedBoundingBox::AxisAlignedBoundingBox()
     : min(INFINITY, INFINITY, INFINITY)
     , max(-INFINITY, -INFINITY, -INFINITY)
 {
 }
-#if __clang_major__ >= 16
+#if __apple_build_version__ > 16000026
 #pragma clang diagnostic pop
-#endif // __clang_major__ >= 16
+#endif // if __apple_build_version__ > 16000026
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 

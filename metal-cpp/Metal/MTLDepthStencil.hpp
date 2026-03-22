@@ -24,6 +24,7 @@
 #include "MTLDefines.hpp"
 #include "MTLHeaderBridge.hpp"
 #include "MTLPrivate.hpp"
+#include "MTLTypes.hpp"
 #include <cstdint>
 
 namespace MTL
@@ -118,6 +119,8 @@ class DepthStencilState : public NS::Referencing<DepthStencilState>
 {
 public:
     Device*     device() const;
+
+    ResourceID  gpuResourceID() const;
 
     NS::String* label() const;
 };
@@ -261,6 +264,11 @@ _MTL_INLINE void MTL::DepthStencilDescriptor::setLabel(const NS::String* label)
 _MTL_INLINE MTL::Device* MTL::DepthStencilState::device() const
 {
     return Object::sendMessage<MTL::Device*>(this, _MTL_PRIVATE_SEL(device));
+}
+
+_MTL_INLINE MTL::ResourceID MTL::DepthStencilState::gpuResourceID() const
+{
+    return Object::sendMessage<MTL::ResourceID>(this, _MTL_PRIVATE_SEL(gpuResourceID));
 }
 
 _MTL_INLINE NS::String* MTL::DepthStencilState::label() const

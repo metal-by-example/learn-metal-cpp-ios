@@ -122,6 +122,7 @@ _MTL_ENUM(NS::UInteger, DataType) {
     DataTypeBFloat2 = 122,
     DataTypeBFloat3 = 123,
     DataTypeBFloat4 = 124,
+    DataTypeDepthStencilState = 139,
     DataTypeTensor = 140,
 };
 

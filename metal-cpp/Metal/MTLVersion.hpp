@@ -23,8 +23,8 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #define METALCPP_VERSION_MAJOR 370
-#define METALCPP_VERSION_MINOR 58
-#define METALCPP_VERSION_PATCH 0
+#define METALCPP_VERSION_MINOR 63
+#define METALCPP_VERSION_PATCH 1
 
 #define METALCPP_SUPPORTS_VERSION(major, minor, patch) \
     ((major < METALCPP_VERSION_MAJOR) || \

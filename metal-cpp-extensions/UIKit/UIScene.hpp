@@ -60,6 +60,8 @@ namespace UI
             NS::Array *windows() const;
 
             UI::Window *keyWindow() const;
+
+            void setKeyWindow( UI::Window *window );
     };
 }
 
@@ -96,6 +98,11 @@ _NS_INLINE NS::Array* UI::WindowScene::windows() const
 UI::Window *UI::WindowScene::keyWindow() const
 {
     return Object::sendMessage< UI::Window* >( this, _UI_PRIVATE_SEL( keyWindow ) );
+}
+
+void UI::WindowScene::setKeyWindow( UI::Window *pWindow )
+{
+    Object::sendMessage< UI::Window* >( this, _UI_PRIVATE_SEL( setKeyWindow_ ), pWindow );
 }
 
 #define UI_SCENE_DELEGATE_ASSOCIATED_OBJECT_KEY "metal-cpp.UISceneDelegate.passthrough"

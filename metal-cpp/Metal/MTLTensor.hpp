@@ -27,6 +27,8 @@
 #include "MTLResource.hpp"
 #include "MTLTypes.hpp"
 
+#if !TARGET_OS_SIMULATOR
+
 namespace MTL
 {
 class Buffer;
@@ -295,3 +297,5 @@ _MTL_INLINE MTL::TensorUsage MTL::Tensor::usage() const
 {
     return Object::sendMessage<MTL::TensorUsage>(this, _MTL_PRIVATE_SEL(usage));
 }
+
+#endif // !TARGET_OS_SIMULATOR
