@@ -73,8 +73,8 @@ _MTK_PRIVATE_DEF_CLS( MTKView );
 namespace MTK::Private::Selector
 {
 
-_MTK_PRIVATE_DEF_SEL( autoresizeDrawable,
-					 "autoresizeDrawable" );
+_MTK_PRIVATE_DEF_SEL( autoResizeDrawable,
+					 "autoResizeDrawable" );
 
 _MTK_PRIVATE_DEF_SEL( clearColor,
 					 "clearColor" );
@@ -157,8 +157,8 @@ _MTK_PRIVATE_DEF_SEL( presentsWithTransaction,
 _MTK_PRIVATE_DEF_SEL( sampleCount,
 					 "sampleCount" );
 
-_MTK_PRIVATE_DEF_SEL( setAutoresizeDrawable_,
-					 "setAutoresizeDrawable:" );
+_MTK_PRIVATE_DEF_SEL( setAutoResizeDrawable_,
+					 "setAutoResizeDrawable:" );
 
 _MTK_PRIVATE_DEF_SEL( setClearColor_,
 					 "setClearColor:" );
