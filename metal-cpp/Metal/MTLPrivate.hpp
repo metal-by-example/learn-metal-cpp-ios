@@ -71,7 +71,7 @@ namespace MTL::Private
     }
 } // MTL::Private
 
-#if defined(__MAC_16_0) || defined(__IPHONE_19_0) || defined(__TVOS_19_0)
+#if defined(__MAC_26_0) || defined(__IPHONE_26_0) || defined(__TVOS_26_0)
 
 #define _MTL_PRIVATE_DEF_STR(type, symbol)                  \
     _MTL_EXTERN type const MTL##symbol _MTL_PRIVATE_IMPORT; \
@@ -97,7 +97,7 @@ namespace MTL::Private
 
 #define _MTL_PRIVATE_DEF_WEAK_CONST(type, symbol) _MTL_PRIVATE_DEF_CONST(type, symbol)
 
-#endif // defined(__MAC_16_0) || defined(__IPHONE_19_0) || defined(__TVOS_19_0)
+#endif
 
 #else
 

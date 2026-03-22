@@ -136,7 +136,7 @@ _MTL_INLINE void MTL::SharedEvent::notifyListener(const MTL::SharedEventListener
 _MTL_INLINE void MTL::SharedEvent::notifyListener(const MTL::SharedEventListener* listener, uint64_t value, const MTL::SharedEventNotificationFunction& function)
 {
     __block MTL::SharedEventNotificationFunction callback = function;
-    notifyListener(listener, value, ^void(SharedEvent* pEvent, std::uint64_t value) { callback(pEvent, value); });
+    notifyListener(listener, value, ^void(SharedEvent* pEvent, std::uint64_t innerValue) { callback(pEvent, innerValue); });
 }
 
 _MTL_INLINE void MTL::SharedEvent::setSignaledValue(uint64_t signaledValue)

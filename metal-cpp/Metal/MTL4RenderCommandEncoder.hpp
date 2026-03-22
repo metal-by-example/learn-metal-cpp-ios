@@ -99,6 +99,8 @@ public:
 
     void         setDepthStoreAction(MTL::StoreAction storeAction);
 
+    void         setDepthTestBounds(float minBound, float maxBound);
+
     void         setFrontFacingWinding(MTL::Winding frontFacingWinding);
 
     void         setObjectThreadgroupMemoryLength(NS::UInteger length, NS::UInteger index);
@@ -245,6 +247,11 @@ _MTL_INLINE void MTL4::RenderCommandEncoder::setDepthStencilState(const MTL::Dep
 _MTL_INLINE void MTL4::RenderCommandEncoder::setDepthStoreAction(MTL::StoreAction storeAction)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthStoreAction_), storeAction);
+}
+
+_MTL_INLINE void MTL4::RenderCommandEncoder::setDepthTestBounds(float minBound, float maxBound)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthTestMinBound_maxBound_), minBound, maxBound);
 }
 
 _MTL_INLINE void MTL4::RenderCommandEncoder::setFrontFacingWinding(MTL::Winding frontFacingWinding)

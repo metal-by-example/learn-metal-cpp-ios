@@ -60,7 +60,19 @@ public:
 
     bool                                    inheritBuffers() const;
 
+    bool                                    inheritCullMode() const;
+
+    bool                                    inheritDepthBias() const;
+
+    bool                                    inheritDepthClipMode() const;
+
+    bool                                    inheritDepthStencilState() const;
+
+    bool                                    inheritFrontFacingWinding() const;
+
     bool                                    inheritPipelineState() const;
+
+    bool                                    inheritTriangleFillMode() const;
 
     IndirectCommandBufferDescriptor*        init();
 
@@ -82,7 +94,19 @@ public:
 
     void                                    setInheritBuffers(bool inheritBuffers);
 
+    void                                    setInheritCullMode(bool inheritCullMode);
+
+    void                                    setInheritDepthBias(bool inheritDepthBias);
+
+    void                                    setInheritDepthClipMode(bool inheritDepthClipMode);
+
+    void                                    setInheritDepthStencilState(bool inheritDepthStencilState);
+
+    void                                    setInheritFrontFacingWinding(bool inheritFrontFacingWinding);
+
     void                                    setInheritPipelineState(bool inheritPipelineState);
+
+    void                                    setInheritTriangleFillMode(bool inheritTriangleFillMode);
 
     void                                    setMaxFragmentBufferBindCount(NS::UInteger maxFragmentBufferBindCount);
 
@@ -141,9 +165,39 @@ _MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritBuffers() const
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritBuffers));
 }
 
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritCullMode() const
+{
+    return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritCullMode));
+}
+
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritDepthBias() const
+{
+    return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritDepthBias));
+}
+
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritDepthClipMode() const
+{
+    return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritDepthClipMode));
+}
+
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritDepthStencilState() const
+{
+    return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritDepthStencilState));
+}
+
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritFrontFacingWinding() const
+{
+    return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritFrontFacingWinding));
+}
+
 _MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritPipelineState() const
 {
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritPipelineState));
+}
+
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritTriangleFillMode() const
+{
+    return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritTriangleFillMode));
 }
 
 _MTL_INLINE MTL::IndirectCommandBufferDescriptor* MTL::IndirectCommandBufferDescriptor::init()
@@ -196,9 +250,39 @@ _MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritBuffers(bool in
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritBuffers_), inheritBuffers);
 }
 
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritCullMode(bool inheritCullMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritCullMode_), inheritCullMode);
+}
+
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritDepthBias(bool inheritDepthBias)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritDepthBias_), inheritDepthBias);
+}
+
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritDepthClipMode(bool inheritDepthClipMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritDepthClipMode_), inheritDepthClipMode);
+}
+
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritDepthStencilState(bool inheritDepthStencilState)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritDepthStencilState_), inheritDepthStencilState);
+}
+
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritFrontFacingWinding(bool inheritFrontFacingWinding)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritFrontFacingWinding_), inheritFrontFacingWinding);
+}
+
 _MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritPipelineState(bool inheritPipelineState)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritPipelineState_), inheritPipelineState);
+}
+
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritTriangleFillMode(bool inheritTriangleFillMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritTriangleFillMode_), inheritTriangleFillMode);
 }
 
 _MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxFragmentBufferBindCount(NS::UInteger maxFragmentBufferBindCount)

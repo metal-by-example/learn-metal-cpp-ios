@@ -205,6 +205,8 @@ public:
     void         setDepthStoreAction(MTL::StoreAction storeAction);
     void         setDepthStoreActionOptions(MTL::StoreActionOptions storeActionOptions);
 
+    void         setDepthTestBounds(float minBound, float maxBound);
+
     void         setFragmentAccelerationStructure(const MTL::AccelerationStructure* accelerationStructure, NS::UInteger bufferIndex);
 
     void         setFragmentBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index);
@@ -514,6 +516,11 @@ _MTL_INLINE void MTL::RenderCommandEncoder::setDepthStoreAction(MTL::StoreAction
 _MTL_INLINE void MTL::RenderCommandEncoder::setDepthStoreActionOptions(MTL::StoreActionOptions storeActionOptions)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthStoreActionOptions_), storeActionOptions);
+}
+
+_MTL_INLINE void MTL::RenderCommandEncoder::setDepthTestBounds(float minBound, float maxBound)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthTestMinBound_maxBound_), minBound, maxBound);
 }
 
 _MTL_INLINE void MTL::RenderCommandEncoder::setFragmentAccelerationStructure(const MTL::AccelerationStructure* accelerationStructure, NS::UInteger bufferIndex)

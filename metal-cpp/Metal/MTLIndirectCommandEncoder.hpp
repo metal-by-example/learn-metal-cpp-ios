@@ -55,7 +55,17 @@ public:
 
     void setBarrier();
 
+    void setCullMode(MTL::CullMode cullMode);
+
+    void setDepthBias(float depthBias, float slopeScale, float clamp);
+
+    void setDepthClipMode(MTL::DepthClipMode depthClipMode);
+
+    void setDepthStencilState(const MTL::DepthStencilState* depthStencilState);
+
     void setFragmentBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index);
+
+    void setFrontFacingWinding(MTL::Winding frontFacingWindning);
 
     void setMeshBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index);
 
@@ -64,6 +74,8 @@ public:
     void setObjectThreadgroupMemoryLength(NS::UInteger length, NS::UInteger index);
 
     void setRenderPipelineState(const MTL::RenderPipelineState* pipelineState);
+
+    void setTriangleFillMode(MTL::TriangleFillMode fillMode);
 
     void setVertexBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index);
     void setVertexBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger stride, NS::UInteger index);
@@ -139,9 +151,34 @@ _MTL_INLINE void MTL::IndirectRenderCommand::setBarrier()
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setBarrier));
 }
 
+_MTL_INLINE void MTL::IndirectRenderCommand::setCullMode(MTL::CullMode cullMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setCullMode_), cullMode);
+}
+
+_MTL_INLINE void MTL::IndirectRenderCommand::setDepthBias(float depthBias, float slopeScale, float clamp)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthBias_slopeScale_clamp_), depthBias, slopeScale, clamp);
+}
+
+_MTL_INLINE void MTL::IndirectRenderCommand::setDepthClipMode(MTL::DepthClipMode depthClipMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthClipMode_), depthClipMode);
+}
+
+_MTL_INLINE void MTL::IndirectRenderCommand::setDepthStencilState(const MTL::DepthStencilState* depthStencilState)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setDepthStencilState_), depthStencilState);
+}
+
 _MTL_INLINE void MTL::IndirectRenderCommand::setFragmentBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setFragmentBuffer_offset_atIndex_), buffer, offset, index);
+}
+
+_MTL_INLINE void MTL::IndirectRenderCommand::setFrontFacingWinding(MTL::Winding frontFacingWindning)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setFrontFacingWinding_), frontFacingWindning);
 }
 
 _MTL_INLINE void MTL::IndirectRenderCommand::setMeshBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index)
@@ -162,6 +199,11 @@ _MTL_INLINE void MTL::IndirectRenderCommand::setObjectThreadgroupMemoryLength(NS
 _MTL_INLINE void MTL::IndirectRenderCommand::setRenderPipelineState(const MTL::RenderPipelineState* pipelineState)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setRenderPipelineState_), pipelineState);
+}
+
+_MTL_INLINE void MTL::IndirectRenderCommand::setTriangleFillMode(MTL::TriangleFillMode fillMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setTriangleFillMode_), fillMode);
 }
 
 _MTL_INLINE void MTL::IndirectRenderCommand::setVertexBuffer(const MTL::Buffer* buffer, NS::UInteger offset, NS::UInteger index)

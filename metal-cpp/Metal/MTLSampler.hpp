@@ -57,6 +57,12 @@ _MTL_ENUM(NS::UInteger, SamplerBorderColor) {
     SamplerBorderColorOpaqueWhite = 2,
 };
 
+_MTL_ENUM(NS::UInteger, SamplerReductionMode) {
+    SamplerReductionModeWeightedAverage = 0,
+    SamplerReductionModeMinimum = 1,
+    SamplerReductionModeMaximum = 2,
+};
+
 class SamplerDescriptor : public NS::Copying<SamplerDescriptor>
 {
 public:
@@ -71,6 +77,8 @@ public:
     NS::String*               label() const;
 
     bool                      lodAverage() const;
+
+    float                     lodBias() const;
 
     float                     lodMaxClamp() const;
 
@@ -88,6 +96,8 @@ public:
 
     SamplerAddressMode        rAddressMode() const;
 
+    SamplerReductionMode      reductionMode() const;
+
     SamplerAddressMode        sAddressMode() const;
 
     void                      setBorderColor(MTL::SamplerBorderColor borderColor);
@@ -97,6 +107,8 @@ public:
     void                      setLabel(const NS::String* label);
 
     void                      setLodAverage(bool lodAverage);
+
+    void                      setLodBias(float lodBias);
 
     void                      setLodMaxClamp(float lodMaxClamp);
 
@@ -113,6 +125,8 @@ public:
     void                      setNormalizedCoordinates(bool normalizedCoordinates);
 
     void                      setRAddressMode(MTL::SamplerAddressMode rAddressMode);
+
+    void                      setReductionMode(MTL::SamplerReductionMode reductionMode);
 
     void                      setSAddressMode(MTL::SamplerAddressMode sAddressMode);
 
@@ -165,6 +179,11 @@ _MTL_INLINE bool MTL::SamplerDescriptor::lodAverage() const
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(lodAverage));
 }
 
+_MTL_INLINE float MTL::SamplerDescriptor::lodBias() const
+{
+    return Object::sendMessage<float>(this, _MTL_PRIVATE_SEL(lodBias));
+}
+
 _MTL_INLINE float MTL::SamplerDescriptor::lodMaxClamp() const
 {
     return Object::sendMessage<float>(this, _MTL_PRIVATE_SEL(lodMaxClamp));
@@ -205,6 +224,11 @@ _MTL_INLINE MTL::SamplerAddressMode MTL::SamplerDescriptor::rAddressMode() const
     return Object::sendMessage<MTL::SamplerAddressMode>(this, _MTL_PRIVATE_SEL(rAddressMode));
 }
 
+_MTL_INLINE MTL::SamplerReductionMode MTL::SamplerDescriptor::reductionMode() const
+{
+    return Object::sendMessage<MTL::SamplerReductionMode>(this, _MTL_PRIVATE_SEL(reductionMode));
+}
+
 _MTL_INLINE MTL::SamplerAddressMode MTL::SamplerDescriptor::sAddressMode() const
 {
     return Object::sendMessage<MTL::SamplerAddressMode>(this, _MTL_PRIVATE_SEL(sAddressMode));
@@ -228,6 +252,11 @@ _MTL_INLINE void MTL::SamplerDescriptor::setLabel(const NS::String* label)
 _MTL_INLINE void MTL::SamplerDescriptor::setLodAverage(bool lodAverage)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setLodAverage_), lodAverage);
+}
+
+_MTL_INLINE void MTL::SamplerDescriptor::setLodBias(float lodBias)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setLodBias_), lodBias);
 }
 
 _MTL_INLINE void MTL::SamplerDescriptor::setLodMaxClamp(float lodMaxClamp)
@@ -268,6 +297,11 @@ _MTL_INLINE void MTL::SamplerDescriptor::setNormalizedCoordinates(bool normalize
 _MTL_INLINE void MTL::SamplerDescriptor::setRAddressMode(MTL::SamplerAddressMode rAddressMode)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setRAddressMode_), rAddressMode);
+}
+
+_MTL_INLINE void MTL::SamplerDescriptor::setReductionMode(MTL::SamplerReductionMode reductionMode)
+{
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setReductionMode_), reductionMode);
 }
 
 _MTL_INLINE void MTL::SamplerDescriptor::setSAddressMode(MTL::SamplerAddressMode sAddressMode)

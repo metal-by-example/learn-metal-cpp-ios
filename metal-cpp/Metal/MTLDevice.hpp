@@ -181,6 +181,7 @@ _MTL_ENUM(NS::Integer, GPUFamily) {
     GPUFamilyApple7 = 1007,
     GPUFamilyApple8 = 1008,
     GPUFamilyApple9 = 1009,
+    GPUFamilyApple10 = 1010,
     GPUFamilyMac1 = 2001,
     GPUFamilyMac2 = 2002,
     GPUFamilyCommon1 = 3001,
