@@ -318,8 +318,8 @@ void Renderer::draw( MTK::View* pView )
 
     pEnc->setRenderPipelineState( _pPSO );
     pEnc->setVertexBuffer( _pArgBuffer, 0, 0 );
-    pEnc->useResource( _pVertexPositionsBuffer, MTL::ResourceUsageRead );
-    pEnc->useResource( _pVertexColorsBuffer, MTL::ResourceUsageRead );
+    pEnc->useResource( _pVertexPositionsBuffer, MTL::ResourceUsageRead, MTL::RenderStageVertex );
+    pEnc->useResource( _pVertexColorsBuffer, MTL::ResourceUsageRead, MTL::RenderStageVertex );
     pEnc->drawPrimitives( MTL::PrimitiveType::PrimitiveTypeTriangle, NS::UInteger(0), NS::UInteger(3) );
 
     pEnc->endEncoding();

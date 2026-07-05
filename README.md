@@ -258,8 +258,8 @@ With the buffers ready, the renderer can begin encoding render commands. First, 
 
 ``` other
 pEnc->setVertexBuffer( _pArgBuffer, 0, 0 );
-pEnc->useResource( _pVertexPositionsBuffer, MTL::ResourceUsageRead );
-pEnc->useResource( _pVertexColorsBuffer, MTL::ResourceUsageRead );
+pEnc->useResource( _pVertexPositionsBuffer, MTL::ResourceUsageRead, MTL::RenderStageVertex );
+pEnc->useResource( _pVertexColorsBuffer, MTL::ResourceUsageRead, MTL::RenderStageVertex );
 ```
 
 The renderer must call the `useResource()` method because the shader indirectly references these vertex data buffers through the argument buffer. This indicates to Metal that the buffer needs to be present in memory when executing the command buffer.
