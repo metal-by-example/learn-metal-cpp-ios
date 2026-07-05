@@ -32,9 +32,17 @@ namespace NS
 class Data : public Copying<Data>
 {
 public:
-    void*    mutableBytes() const;
-    UInteger length() const;
+    const void*    bytes() const;
+    void*          mutableBytes() const;
+    UInteger       length() const;
 };
+}
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+_NS_INLINE const void* NS::Data::bytes() const
+{
+    return Object::sendMessage<void*>(this, _NS_PRIVATE_SEL(bytes));
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------

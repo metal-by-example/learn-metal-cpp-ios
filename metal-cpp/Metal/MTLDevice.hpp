@@ -95,6 +95,7 @@ class SharedEventHandle;
 class SharedTextureHandle;
 class StitchedLibraryDescriptor;
 class Tensor;
+class TensorBufferAttachments;
 class TensorDescriptor;
 class Texture;
 class TextureDescriptor;
@@ -222,6 +223,11 @@ _MTL_ENUM(NS::UInteger, CounterSamplingPoint) {
     CounterSamplingPointAtDispatchBoundary = 2,
     CounterSamplingPointAtTileDispatchBoundary = 3,
     CounterSamplingPointAtBlitBoundary = 4,
+};
+
+_MTL_ENUM(NS::Integer, DeviceError) {
+    DeviceErrorNone = 0,
+    DeviceErrorNotSupported = 1,
 };
 
 _MTL_OPTIONS(NS::UInteger, PipelineOption) {
@@ -498,6 +504,7 @@ public:
     Texture*                         newSharedTexture(const MTL::SharedTextureHandle* sharedHandle);
 
     Tensor*                          newTensor(const MTL::TensorDescriptor* descriptor, NS::Error** error);
+    Tensor*                          newTensor(const MTL::TensorDescriptor* descriptor, const MTL::TensorBufferAttachments* attachments, NS::Error** error);
 
     Texture*                         newTexture(const MTL::TextureDescriptor* descriptor);
     Texture*                         newTexture(const MTL::TextureDescriptor* descriptor, const IOSurfaceRef iosurface, NS::UInteger plane);
@@ -554,6 +561,8 @@ public:
 
     bool         supportsFunctionPointers() const;
     bool         supportsFunctionPointersFromRender() const;
+
+    bool         supportsPlacementSparse() const;
 
     bool         supportsPrimitiveMotionBlur() const;
 
@@ -1287,6 +1296,11 @@ _MTL_INLINE MTL::Tensor* MTL::Device::newTensor(const MTL::TensorDescriptor* des
     return Object::sendMessage<MTL::Tensor*>(this, _MTL_PRIVATE_SEL(newTensorWithDescriptor_error_), descriptor, error);
 }
 
+_MTL_INLINE MTL::Tensor* MTL::Device::newTensor(const MTL::TensorDescriptor* descriptor, const MTL::TensorBufferAttachments* attachments, NS::Error** error)
+{
+    return Object::sendMessage<MTL::Tensor*>(this, _MTL_PRIVATE_SEL(newTensorWithDescriptor_attachments_error_), descriptor, attachments, error);
+}
+
 _MTL_INLINE MTL::Texture* MTL::Device::newTexture(const MTL::TextureDescriptor* descriptor)
 {
     return Object::sendMessage<MTL::Texture*>(this, _MTL_PRIVATE_SEL(newTextureWithDescriptor_), descriptor);
@@ -1435,6 +1449,11 @@ _MTL_INLINE bool MTL::Device::supportsFunctionPointers() const
 _MTL_INLINE bool MTL::Device::supportsFunctionPointersFromRender() const
 {
     return Object::sendMessageSafe<bool>(this, _MTL_PRIVATE_SEL(supportsFunctionPointersFromRender));
+}
+
+_MTL_INLINE bool MTL::Device::supportsPlacementSparse() const
+{
+    return Object::sendMessageSafe<bool>(this, _MTL_PRIVATE_SEL(supportsPlacementSparse));
 }
 
 _MTL_INLINE bool MTL::Device::supportsPrimitiveMotionBlur() const

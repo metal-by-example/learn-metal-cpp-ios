@@ -185,6 +185,8 @@ namespace Private
             "bundleWithPath:");
         _NS_PRIVATE_DEF_SEL(bundleWithURL_,
             "bundleWithURL:");
+        _NS_PRIVATE_DEF_SEL(bytes,
+            "bytes");
         _NS_PRIVATE_DEF_SEL(caseInsensitiveCompare_,
             "caseInsensitiveCompare:");
         _NS_PRIVATE_DEF_SEL(characterAtIndex_,

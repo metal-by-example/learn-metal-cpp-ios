@@ -25,8 +25,6 @@
 #include "MTLHeaderBridge.hpp"
 #include "MTLPrivate.hpp"
 
-#if !TARGET_OS_SIMULATOR
-
 namespace MTL
 {
 class Buffer;
@@ -211,5 +209,3 @@ _MTL_INLINE void MTL::IOFileHandle::setLabel(const NS::String* label)
 {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setLabel_), label);
 }
-
-#endif // !TARGET_OS_SIMULATOR

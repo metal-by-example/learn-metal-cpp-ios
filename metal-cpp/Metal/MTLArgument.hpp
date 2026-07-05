@@ -35,6 +35,7 @@ class ArrayType;
 class PointerType;
 class StructMember;
 class StructType;
+class TensorAuxiliaryPlaneType;
 class TensorExtents;
 class TensorReferenceType;
 class TextureReferenceType;
@@ -56,9 +57,7 @@ _MTL_ENUM(NS::Integer, BindingType) {
     BindingTypeInstanceAccelerationStructure = 26,
     BindingTypeIntersectionFunctionTable = 27,
     BindingTypeObjectPayload = 34,
-#if !TARGET_OS_SIMULATOR
     BindingTypeTensor = 37,
-#endif
 };
 
 _MTL_ENUM(NS::UInteger, ArgumentType) {
@@ -113,9 +112,7 @@ public:
 
     StructType*           structType();
 
-#if !TARGET_OS_SIMULATOR
     TensorReferenceType*  tensorReferenceType();
-#endif
 
     TextureReferenceType* textureReferenceType();
 };
@@ -191,13 +188,27 @@ public:
 
     TextureType                  textureType() const;
 };
-#if !TARGET_OS_SIMULATOR
+class TensorAuxiliaryPlaneType : public NS::Referencing<TensorAuxiliaryPlaneType>
+{
+public:
+    static TensorAuxiliaryPlaneType* alloc();
+
+    TensorExtents*                   blockFactors() const;
+
+    TensorDataType                   dataType() const;
+
+    TensorAuxiliaryPlaneType*        init();
+
+    TensorPlaneType                  planeType() const;
+};
 class TensorReferenceType : public NS::Referencing<TensorReferenceType, Type>
 {
 public:
     BindingAccess               access() const;
 
     static TensorReferenceType* alloc();
+
+    NS::Array*                  auxiliaryPlanes() const;
 
     TensorExtents*              dimensions() const;
 
@@ -207,7 +218,6 @@ public:
 
     TensorDataType              tensorDataType() const;
 };
-#endif
 class Argument : public NS::Referencing<Argument>
 {
 public:
@@ -311,17 +321,18 @@ public:
 
     NS::UInteger objectPayloadDataSize() const;
 };
-#if !TARGET_OS_SIMULATOR
 class TensorBinding : public NS::Referencing<TensorBinding, Binding>
 {
 public:
+    NS::Array*     auxiliaryPlanes() const;
+
     TensorExtents* dimensions() const;
 
     DataType       indexType() const;
 
     TensorDataType tensorDataType() const;
 };
-#endif
+
 }
 _MTL_INLINE MTL::Type* MTL::Type::alloc()
 {
@@ -383,12 +394,10 @@ _MTL_INLINE MTL::StructType* MTL::StructMember::structType()
     return Object::sendMessage<MTL::StructType*>(this, _MTL_PRIVATE_SEL(structType));
 }
 
-#if !TARGET_OS_SIMULATOR
 _MTL_INLINE MTL::TensorReferenceType* MTL::StructMember::tensorReferenceType()
 {
     return Object::sendMessage<MTL::TensorReferenceType*>(this, _MTL_PRIVATE_SEL(tensorReferenceType));
 }
-#endif
 
 _MTL_INLINE MTL::TextureReferenceType* MTL::StructMember::textureReferenceType()
 {
@@ -545,7 +554,31 @@ _MTL_INLINE MTL::TextureType MTL::TextureReferenceType::textureType() const
     return Object::sendMessage<MTL::TextureType>(this, _MTL_PRIVATE_SEL(textureType));
 }
 
-#if !TARGET_OS_SIMULATOR
+_MTL_INLINE MTL::TensorAuxiliaryPlaneType* MTL::TensorAuxiliaryPlaneType::alloc()
+{
+    return NS::Object::alloc<MTL::TensorAuxiliaryPlaneType>(_MTL_PRIVATE_CLS(MTLTensorAuxiliaryPlaneType));
+}
+
+_MTL_INLINE MTL::TensorExtents* MTL::TensorAuxiliaryPlaneType::blockFactors() const
+{
+    return Object::sendMessage<MTL::TensorExtents*>(this, _MTL_PRIVATE_SEL(blockFactors));
+}
+
+_MTL_INLINE MTL::TensorDataType MTL::TensorAuxiliaryPlaneType::dataType() const
+{
+    return Object::sendMessage<MTL::TensorDataType>(this, _MTL_PRIVATE_SEL(dataType));
+}
+
+_MTL_INLINE MTL::TensorAuxiliaryPlaneType* MTL::TensorAuxiliaryPlaneType::init()
+{
+    return NS::Object::init<MTL::TensorAuxiliaryPlaneType>();
+}
+
+_MTL_INLINE MTL::TensorPlaneType MTL::TensorAuxiliaryPlaneType::planeType() const
+{
+    return Object::sendMessage<MTL::TensorPlaneType>(this, _MTL_PRIVATE_SEL(planeType));
+}
+
 _MTL_INLINE MTL::BindingAccess MTL::TensorReferenceType::access() const
 {
     return Object::sendMessage<MTL::BindingAccess>(this, _MTL_PRIVATE_SEL(access));
@@ -554,6 +587,11 @@ _MTL_INLINE MTL::BindingAccess MTL::TensorReferenceType::access() const
 _MTL_INLINE MTL::TensorReferenceType* MTL::TensorReferenceType::alloc()
 {
     return NS::Object::alloc<MTL::TensorReferenceType>(_MTL_PRIVATE_CLS(MTLTensorReferenceType));
+}
+
+_MTL_INLINE NS::Array* MTL::TensorReferenceType::auxiliaryPlanes() const
+{
+    return Object::sendMessage<NS::Array*>(this, _MTL_PRIVATE_SEL(auxiliaryPlanes));
 }
 
 _MTL_INLINE MTL::TensorExtents* MTL::TensorReferenceType::dimensions() const
@@ -575,7 +613,6 @@ _MTL_INLINE MTL::TensorDataType MTL::TensorReferenceType::tensorDataType() const
 {
     return Object::sendMessage<MTL::TensorDataType>(this, _MTL_PRIVATE_SEL(tensorDataType));
 }
-#endif
 
 _MTL_INLINE MTL::BindingAccess MTL::Argument::access() const
 {
@@ -782,7 +819,11 @@ _MTL_INLINE NS::UInteger MTL::ObjectPayloadBinding::objectPayloadDataSize() cons
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(objectPayloadDataSize));
 }
 
-#if !TARGET_OS_SIMULATOR
+_MTL_INLINE NS::Array* MTL::TensorBinding::auxiliaryPlanes() const
+{
+    return Object::sendMessage<NS::Array*>(this, _MTL_PRIVATE_SEL(auxiliaryPlanes));
+}
+
 _MTL_INLINE MTL::TensorExtents* MTL::TensorBinding::dimensions() const
 {
     return Object::sendMessage<MTL::TensorExtents*>(this, _MTL_PRIVATE_SEL(dimensions));
@@ -797,4 +838,3 @@ _MTL_INLINE MTL::TensorDataType MTL::TensorBinding::tensorDataType() const
 {
     return Object::sendMessage<MTL::TensorDataType>(this, _MTL_PRIVATE_SEL(tensorDataType));
 }
-#endif

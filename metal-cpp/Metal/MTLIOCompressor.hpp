@@ -27,8 +27,6 @@
 
 #include "../Foundation/Foundation.hpp"
 
-#if !TARGET_OS_SIMULATOR
-
 namespace MTL
 {
 using IOCompressionContext=void*;
@@ -94,5 +92,3 @@ _NS_EXPORT MTL::IOCompressionStatus MTL::IOFlushAndDestroyCompressionContext(voi
 }
 
 #endif
-
-#endif // !TARGET_OS_SIMULATOR
