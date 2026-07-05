@@ -1,4 +1,4 @@
-# Copyright 2020-2021 Apple Inc.
+# Copyright 2026 Warren Moore
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,17 +12,64 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-APP_00WINDOW_OBJECTS=learn-metal/00-window/00-window.o
-APP_01PRIMITIVE_OBJECTS=learn-metal/01-primitive/01-primitive.o
-APP_02ARGBUFFERS_OBJECTS=learn-metal/02-argbuffers/02-argbuffers.o
-APP_03ANIMATION_OBJECTS=learn-metal/03-animation/03-animation.o
-APP_04INSTANCING_OBJECTS=learn-metal/04-instancing/04-instancing.o
-APP_05PERSPECTIVE_OBJECTS=learn-metal/05-perspective/05-perspective.o
-APP_06LIGHTING_OBJECTS=learn-metal/06-lighting/06-lighting.o
-APP_07TEXTURING_OBJECTS=learn-metal/07-texturing/07-texturing.o
-APP_08COMPUTE_OBJECTS=learn-metal/08-compute/08-compute.o
-APP_09COMPUTETORENDER_OBJECTS=learn-metal/09-compute-to-render/09-compute-to-render.o
-APP_10FRAMEDEBUGGING_OBJECTS=learn-metal/10-frame-debugging/10-frame-debugging.o
+IOS_VERSION_MIN = 18.0
+
+ifdef DEVICE
+SDK    = $(shell xcrun --sdk iphoneos --show-sdk-path)
+TARGET = arm64-apple-ios$(IOS_VERSION_MIN)
+ifeq ($(strip $(PROVISIONING_PROFILE)),)
+$(error DEVICE builds require PROVISIONING_PROFILE=/path/to/your.mobileprovision)
+endif
+# Embed the profile and sign with the entitlements it carries. An empty
+# CODESIGN_IDENTITY lets codesign pick, but that fails if several certs match.
+CODESIGN_IDENTITY ?=
+CODESIGN = cp $(PROVISIONING_PROFILE) $@/embedded.mobileprovision && \
+	_ent=$$(mktemp) && \
+	security cms -D -i $(PROVISIONING_PROFILE) | plutil -extract Entitlements xml1 -o $$_ent - && \
+	codesign --force --timestamp=none --generate-entitlement-der \
+	         --sign "$(CODESIGN_IDENTITY)" --entitlements $$_ent $@ && \
+	rm -f $$_ent
+else
+SDK    = $(shell xcrun --sdk iphonesimulator --show-sdk-path)
+TARGET = arm64-apple-ios$(IOS_VERSION_MIN)-simulator
+# Simulator apps only need an ad-hoc signature.
+CODESIGN = codesign --force --sign - $@
+endif
+
+STORYBOARD = learn-metal/ios-shared/Base.lproj/LaunchScreen.storyboard
+INFO_PLIST = learn-metal/ios-shared/Info.plist
+
+# Each app is identified by its source subdirectory. That name is reused for the
+# bundle, executable, bundle identifier, and CFBundleName, so the built bundles
+# sort in build/ the same way the sources sort on disk.
+APPS := \
+    00-window \
+    01-primitive \
+    02-argbuffers \
+    03-animation \
+    04-instancing \
+    05-perspective \
+    06-lighting \
+    07-texturing \
+    08-compute \
+    09-compute-to-render \
+    10-frame-debugging
+
+# Human-readable display names (CFBundleDisplayName). These may contain spaces.
+DISPLAY_NAME_00-window            = Window
+DISPLAY_NAME_01-primitive         = Primitive
+DISPLAY_NAME_02-argbuffers        = Arg Buffers
+DISPLAY_NAME_03-animation         = Animation
+DISPLAY_NAME_04-instancing        = Instancing
+DISPLAY_NAME_05-perspective       = Perspective
+DISPLAY_NAME_06-lighting          = Lighting
+DISPLAY_NAME_07-texturing         = Texturing
+DISPLAY_NAME_08-compute           = Compute
+DISPLAY_NAME_09-compute-to-render = Compute Render
+DISPLAY_NAME_10-frame-debugging   = Debugging
+
+BUNDLES := $(foreach a,$(APPS),build/$a.app)
+OBJECTS := $(foreach a,$(APPS),learn-metal/$a/$a.o)
 
 ifdef DEBUG
 DBG_OPT_FLAGS=-g
@@ -37,73 +84,41 @@ ASAN_FLAGS=
 endif
 
 CC=clang++
-CFLAGS=-Wall -std=c++17 -I./metal-cpp -I./metal-cpp-extensions -fno-objc-arc $(DBG_OPT_FLAGS) $(ASAN_FLAGS)
-LDFLAGS=-framework Metal -framework Foundation -framework Cocoa -framework CoreGraphics -framework MetalKit 
-
+CFLAGS=-Wall -std=c++17 -I./metal-cpp -I./metal-cpp-extensions -fno-objc-arc -isysroot $(SDK) -target $(TARGET) -mios-version-min=$(IOS_VERSION_MIN) $(DBG_OPT_FLAGS) $(ASAN_FLAGS)
+LDFLAGS=-framework Metal -framework Foundation -framework UIKit -framework CoreGraphics -framework MetalKit
 VPATH=./metal-cpp
+PLISTBUDDY = /usr/libexec/PlistBuddy
+
+.PHONY: all clean
+all: $(BUNDLES)
 
 %.o: %.cpp
 	$(CC) -c $(CFLAGS) $< -o $@
 
+define build_app
+build/$(1).app: learn-metal/$(1)/$(1).o Makefile
+	# Lay down a fresh app bundle
+	rm -rf $$@ && mkdir -p $$@
+	# Copy Info.plist
+	cp $(INFO_PLIST) $$@/Info.plist
+	# Fix up Info.plist
+	$(PLISTBUDDY) \
+	  -c "Set :CFBundleExecutable $(1)" \
+	  -c "Set :CFBundleIdentifier com.metalbyexample.learn-metal-cpp.$(1)" \
+	  -c "Set :CFBundleName $(1)" \
+	  -c "Set :CFBundleDisplayName $(DISPLAY_NAME_$(1))" $$@/Info.plist
+	# Compile launch storyboard
+	ibtool $(STORYBOARD) --compilation-directory $$@/Base.lproj
+	# Build
+	$(CC) $(CFLAGS) $(LDFLAGS) $$< -o $$@/$(1)
+	# Code sign (ad-hoc for Simulator, real identity + profile for device)
+	$$(CODESIGN)
 
-all: build/00-window build/01-primitive build/02-argbuffers build/03-animation build/04-instancing build/05-perspective build/06-lighting build/07-texturing build/08-compute build/09-compute-to-render build/10-frame-debugging
+.PHONY: $(1)
+$(1): build/$(1).app
+endef
 
-.PHONY: all
-
-build/00-window: $(APP_00WINDOW_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_00WINDOW_OBJECTS) -o $@
-
-build/01-primitive: $(APP_01PRIMITIVE_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_01PRIMITIVE_OBJECTS) -o $@
-
-build/02-argbuffers: $(APP_02ARGBUFFERS_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_02ARGBUFFERS_OBJECTS) -o $@
-
-build/03-animation: $(APP_03ANIMATION_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_03ANIMATION_OBJECTS) -o $@
-
-build/04-instancing: $(APP_04INSTANCING_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_04INSTANCING_OBJECTS) -o $@
-
-build/05-perspective: $(APP_05PERSPECTIVE_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_05PERSPECTIVE_OBJECTS) -o $@
-
-build/06-lighting: $(APP_06LIGHTING_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_06LIGHTING_OBJECTS) -o $@
-
-build/07-texturing: $(APP_07TEXTURING_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_07TEXTURING_OBJECTS) -o $@
-
-build/08-compute: $(APP_08COMPUTE_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_08COMPUTE_OBJECTS) -o $@
-
-build/09-compute-to-render: $(APP_09COMPUTETORENDER_OBJECTS) Makefile
-	$(CC) $(CFLAGS) $(LDFLAGS) $(APP_09COMPUTETORENDER_OBJECTS) -o $@
-
-build/10-frame-debugging: $(APP_10FRAMEDEBUGGING_OBJECTS) Makefile
-# project-less capture requires an Info.plist. Here it is embedded directly into the binary
-	$(CC) $(CFLAGS) $(LDFLAGS) -sectcreate __TEXT __info_plist ./learn-metal/10-frame-debugging/Info.plist $(APP_10FRAMEDEBUGGING_OBJECTS) -o $@
+$(foreach a,$(APPS),$(eval $(call build_app,$a)))
 
 clean:
-	rm -f $(APP_00WINDOW_OBJECTS) \
-		$(APP_01PRIMITIVE_OBJECTS) \
-		$(APP_02ARGBUFFERS_OBJECTS) \
-		$(APP_03ANIMATION_OBJECTS) \
-		$(APP_04INSTANCING_OBJECTS) \
-		$(APP_05PERSPECTIVE_OBJECTS) \
-		$(APP_06LIGHTING_OBJECTS) \
-		$(APP_07TEXTURING_OBJECTS) \
-		$(APP_08COMPUTE_OBJECTS) \
-		$(APP_09COMPUTETORENDER_OBJECTS) \
-		$(APP_10FRAMEDEBUGGING_OBJECTS) \
-		build/00-window \
-		build/01-primitive \
-		build/02-argbuffers \
-		build/03-animation \
-		build/04-instancing \
-		build/05-perspective \
-		build/06-lighting \
-		build/07-texturing \
-		build/08-compute \
-		build/09-compute-to-render \
-		build/10-frame-debugging
+	rm -rf $(BUNDLES) $(OBJECTS)

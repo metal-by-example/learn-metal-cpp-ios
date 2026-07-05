@@ -6,6 +6,32 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		833221BB2FFB0705004395C4 /* LearnMetalCPP */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 833221BC2FFB0705004395C4 /* Build configuration list for PBXAggregateTarget "LearnMetalCPP" */;
+			buildPhases = (
+			);
+			dependencies = (
+				833221C02FFB070F004395C4 /* PBXTargetDependency */,
+				833221C22FFB070F004395C4 /* PBXTargetDependency */,
+				833221C42FFB070F004395C4 /* PBXTargetDependency */,
+				833221C62FFB070F004395C4 /* PBXTargetDependency */,
+				833221C82FFB070F004395C4 /* PBXTargetDependency */,
+				833221CA2FFB070F004395C4 /* PBXTargetDependency */,
+				833221CC2FFB070F004395C4 /* PBXTargetDependency */,
+				833221CE2FFB070F004395C4 /* PBXTargetDependency */,
+				833221D02FFB070F004395C4 /* PBXTargetDependency */,
+				833221D22FFB070F004395C4 /* PBXTargetDependency */,
+				833221D42FFB070F004395C4 /* PBXTargetDependency */,
+			);
+			name = LearnMetalCPP;
+			packageProductDependencies = (
+			);
+			productName = LearnMetalCPP;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		83ABBB172A12C73000763796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83ABBB162A12C73000763796 /* Assets.xcassets */; };
 		83ABBB1A2A12C73000763796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ABBB182A12C73000763796 /* LaunchScreen.storyboard */; };
@@ -77,6 +103,86 @@
 		83E013602E413190004199F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E013262E413150004199F1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		833221BF2FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBB072A12C72F00763796;
+			remoteInfo = "00-window";
+		};
+		833221C12FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBB2D2A12EFC300763796;
+			remoteInfo = "01-primitive";
+		};
+		833221C32FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBB4F2A12F21600763796;
+			remoteInfo = "02-argbuffers";
+		};
+		833221C52FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBB712A12FBE200763796;
+			remoteInfo = "03-animation";
+		};
+		833221C72FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBB932A12FCB600763796;
+			remoteInfo = "04-instancing";
+		};
+		833221C92FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBBB52A12FDDA00763796;
+			remoteInfo = "05-perspective";
+		};
+		833221CB2FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBBD72A13011700763796;
+			remoteInfo = "06-lighting";
+		};
+		833221CD2FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBBF92A13031100763796;
+			remoteInfo = "07-texturing";
+		};
+		833221CF2FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBC1C2A13049600763796;
+			remoteInfo = "08-compute";
+		};
+		833221D12FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBC3E2A1305C500763796;
+			remoteInfo = "09-compute-to-render";
+		};
+		833221D32FFB070F004395C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A9C05727349B9000932563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ABBC602A1306FB00763796;
+			remoteInfo = "10-frame-debugging";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		40B3313227F3B7150029F74E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71A9C09227349E3000932563 /* 00-window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "00-window.cpp"; sourceTree = "<group>"; };
@@ -92,19 +198,19 @@
 		71A9C18A2734A42900932563 /* 10-frame-debugging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "10-frame-debugging.cpp"; sourceTree = "<group>"; };
 		71A9C18B2734A42900932563 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CBBD399B025FAB0CA05C0D /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		83ABBB082A12C72F00763796 /* Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Window.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB082A12C72F00763796 /* 00-window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "00-window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ABBB162A12C73000763796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83ABBB192A12C73000763796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		83ABBB2E2A12EFC300763796 /* Primitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primitive.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBB502A12F21600763796 /* Arg Buffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arg Buffers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBB722A12FBE200763796 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBB942A12FCB700763796 /* Instancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBBB62A12FDDA00763796 /* Perspective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perspective.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBBD82A13011700763796 /* Lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBBFA2A13031100763796 /* Texturing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texturing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBC1D2A13049600763796 /* Compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compute.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBC3F2A1305C500763796 /* Compute Render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compute Render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ABBC612A1306FB00763796 /* Debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debugging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB2E2A12EFC300763796 /* 01-primitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-primitive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB502A12F21600763796 /* 02-argbuffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-argbuffers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB722A12FBE200763796 /* 03-animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBB942A12FCB700763796 /* 04-instancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04-instancing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBBB62A12FDDA00763796 /* 05-perspective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-perspective.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBBD82A13011700763796 /* 06-lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-lighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBBFA2A13031100763796 /* 07-texturing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-texturing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBC1D2A13049600763796 /* 08-compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08-compute.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBC3F2A1305C500763796 /* 09-compute-to-render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09-compute-to-render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ABBC612A1306FB00763796 /* 10-frame-debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-frame-debugging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E013252E413150004199F1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		83E013262E413150004199F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		83E013292E413154004199F1 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
@@ -281,17 +387,17 @@
 		71A9C06027349B9000932563 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83ABBB082A12C72F00763796 /* Window.app */,
-				83ABBB2E2A12EFC300763796 /* Primitive.app */,
-				83ABBB502A12F21600763796 /* Arg Buffers.app */,
-				83ABBB722A12FBE200763796 /* Animation.app */,
-				83ABBB942A12FCB700763796 /* Instancing.app */,
-				83ABBBB62A12FDDA00763796 /* Perspective.app */,
-				83ABBBD82A13011700763796 /* Lighting.app */,
-				83ABBBFA2A13031100763796 /* Texturing.app */,
-				83ABBC1D2A13049600763796 /* Compute.app */,
-				83ABBC3F2A1305C500763796 /* Compute Render.app */,
-				83ABBC612A1306FB00763796 /* Debugging.app */,
+				83ABBB082A12C72F00763796 /* 00-window.app */,
+				83ABBB2E2A12EFC300763796 /* 01-primitive.app */,
+				83ABBB502A12F21600763796 /* 02-argbuffers.app */,
+				83ABBB722A12FBE200763796 /* 03-animation.app */,
+				83ABBB942A12FCB700763796 /* 04-instancing.app */,
+				83ABBBB62A12FDDA00763796 /* 05-perspective.app */,
+				83ABBBD82A13011700763796 /* 06-lighting.app */,
+				83ABBBFA2A13031100763796 /* 07-texturing.app */,
+				83ABBC1D2A13049600763796 /* 08-compute.app */,
+				83ABBC3F2A1305C500763796 /* 09-compute-to-render.app */,
+				83ABBC612A1306FB00763796 /* 10-frame-debugging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -431,7 +537,7 @@
 			);
 			name = "00-window";
 			productName = "00-window";
-			productReference = 83ABBB082A12C72F00763796 /* Window.app */;
+			productReference = 83ABBB082A12C72F00763796 /* 00-window.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBB2D2A12EFC300763796 /* 01-primitive */ = {
@@ -448,7 +554,7 @@
 			);
 			name = "01-primitive";
 			productName = "01-primitive";
-			productReference = 83ABBB2E2A12EFC300763796 /* Primitive.app */;
+			productReference = 83ABBB2E2A12EFC300763796 /* 01-primitive.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBB4F2A12F21600763796 /* 02-argbuffers */ = {
@@ -465,7 +571,7 @@
 			);
 			name = "02-argbuffers";
 			productName = "02-argbuffers";
-			productReference = 83ABBB502A12F21600763796 /* Arg Buffers.app */;
+			productReference = 83ABBB502A12F21600763796 /* 02-argbuffers.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBB712A12FBE200763796 /* 03-animation */ = {
@@ -482,7 +588,7 @@
 			);
 			name = "03-animation";
 			productName = "03-animation";
-			productReference = 83ABBB722A12FBE200763796 /* Animation.app */;
+			productReference = 83ABBB722A12FBE200763796 /* 03-animation.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBB932A12FCB600763796 /* 04-instancing */ = {
@@ -499,7 +605,7 @@
 			);
 			name = "04-instancing";
 			productName = "04-instancing";
-			productReference = 83ABBB942A12FCB700763796 /* Instancing.app */;
+			productReference = 83ABBB942A12FCB700763796 /* 04-instancing.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBBB52A12FDDA00763796 /* 05-perspective */ = {
@@ -516,7 +622,7 @@
 			);
 			name = "05-perspective";
 			productName = "05-perspective";
-			productReference = 83ABBBB62A12FDDA00763796 /* Perspective.app */;
+			productReference = 83ABBBB62A12FDDA00763796 /* 05-perspective.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBBD72A13011700763796 /* 06-lighting */ = {
@@ -533,7 +639,7 @@
 			);
 			name = "06-lighting";
 			productName = "06-lighting";
-			productReference = 83ABBBD82A13011700763796 /* Lighting.app */;
+			productReference = 83ABBBD82A13011700763796 /* 06-lighting.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBBF92A13031100763796 /* 07-texturing */ = {
@@ -550,7 +656,7 @@
 			);
 			name = "07-texturing";
 			productName = "07-texturing";
-			productReference = 83ABBBFA2A13031100763796 /* Texturing.app */;
+			productReference = 83ABBBFA2A13031100763796 /* 07-texturing.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBC1C2A13049600763796 /* 08-compute */ = {
@@ -567,7 +673,7 @@
 			);
 			name = "08-compute";
 			productName = "08-compute";
-			productReference = 83ABBC1D2A13049600763796 /* Compute.app */;
+			productReference = 83ABBC1D2A13049600763796 /* 08-compute.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBC3E2A1305C500763796 /* 09-compute-to-render */ = {
@@ -584,7 +690,7 @@
 			);
 			name = "09-compute-to-render";
 			productName = "09-compute-to-render";
-			productReference = 83ABBC3F2A1305C500763796 /* Compute Render.app */;
+			productReference = 83ABBC3F2A1305C500763796 /* 09-compute-to-render.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83ABBC602A1306FB00763796 /* 10-frame-debugging */ = {
@@ -601,7 +707,7 @@
 			);
 			name = "10-frame-debugging";
 			productName = "10-frame-debugging";
-			productReference = 83ABBC612A1306FB00763796 /* Debugging.app */;
+			productReference = 83ABBC612A1306FB00763796 /* 10-frame-debugging.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -611,9 +717,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 2630;
+				LastUpgradeCheck = 2700;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
+					833221BB2FFB0705004395C4 = {
+						CreatedOnToolsVersion = 27.0;
+					};
 					83ABBB072A12C72F00763796 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -673,6 +782,7 @@
 				83ABBC1C2A13049600763796 /* 08-compute */,
 				83ABBC3E2A1305C500763796 /* 09-compute-to-render */,
 				83ABBC602A1306FB00763796 /* 10-frame-debugging */,
+				833221BB2FFB0705004395C4 /* LearnMetalCPP */,
 			);
 		};
 /* End PBXProject section */
@@ -850,6 +960,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		833221C02FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBB072A12C72F00763796 /* 00-window */;
+			targetProxy = 833221BF2FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221C22FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBB2D2A12EFC300763796 /* 01-primitive */;
+			targetProxy = 833221C12FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221C42FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBB4F2A12F21600763796 /* 02-argbuffers */;
+			targetProxy = 833221C32FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221C62FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBB712A12FBE200763796 /* 03-animation */;
+			targetProxy = 833221C52FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221C82FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBB932A12FCB600763796 /* 04-instancing */;
+			targetProxy = 833221C72FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221CA2FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBBB52A12FDDA00763796 /* 05-perspective */;
+			targetProxy = 833221C92FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221CC2FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBBD72A13011700763796 /* 06-lighting */;
+			targetProxy = 833221CB2FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221CE2FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBBF92A13031100763796 /* 07-texturing */;
+			targetProxy = 833221CD2FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221D02FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBC1C2A13049600763796 /* 08-compute */;
+			targetProxy = 833221CF2FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221D22FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBC3E2A1305C500763796 /* 09-compute-to-render */;
+			targetProxy = 833221D12FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+		833221D42FFB070F004395C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ABBC602A1306FB00763796 /* 10-frame-debugging */;
+			targetProxy = 833221D32FFB070F004395C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		83ABBB182A12C73000763796 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -918,7 +1086,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -977,11 +1145,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Release;
+		};
+		833221BD2FFB0705004395C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		833221BE2FFB0705004395C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -993,13 +1175,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Window;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1008,8 +1189,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.window";
-				PRODUCT_NAME = Window;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.00-window";
+				PRODUCT_NAME = "00-window";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1024,13 +1205,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Window;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1039,8 +1219,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.window";
-				PRODUCT_NAME = Window;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.00-window";
+				PRODUCT_NAME = "00-window";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1055,24 +1235,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Primitive;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.primitive";
-				PRODUCT_NAME = Primitive;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.01-primitive";
+				PRODUCT_NAME = "01-primitive";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1086,24 +1260,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Primitive;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.primitive";
-				PRODUCT_NAME = Primitive;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.01-primitive";
+				PRODUCT_NAME = "01-primitive";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1119,23 +1287,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = "Arg Buffers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.argbuffers";
-				PRODUCT_NAME = "Arg Buffers";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.02-argbuffers";
+				PRODUCT_NAME = "02-argbuffers";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1150,23 +1314,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = "Arg Buffers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.argbuffers";
-				PRODUCT_NAME = "Arg Buffers";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.02-argbuffers";
+				PRODUCT_NAME = "02-argbuffers";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1182,23 +1342,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Animation;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.animation";
-				PRODUCT_NAME = Animation;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.03-animation";
+				PRODUCT_NAME = "03-animation";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1213,23 +1369,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Animation;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.animation";
-				PRODUCT_NAME = Animation;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.03-animation";
+				PRODUCT_NAME = "03-animation";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1245,23 +1397,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Instancing;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.instancing";
-				PRODUCT_NAME = Instancing;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.04-instancing";
+				PRODUCT_NAME = "04-instancing";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1276,23 +1424,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Instancing;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.instancing";
-				PRODUCT_NAME = Instancing;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.04-instancing";
+				PRODUCT_NAME = "04-instancing";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1308,23 +1452,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Perspective;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.perspective";
-				PRODUCT_NAME = Perspective;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.05-perspective";
+				PRODUCT_NAME = "05-perspective";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1339,23 +1479,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Perspective;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.perspective";
-				PRODUCT_NAME = Perspective;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.05-perspective";
+				PRODUCT_NAME = "05-perspective";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1371,23 +1507,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Lighting;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.lighting";
-				PRODUCT_NAME = Lighting;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.06-lighting";
+				PRODUCT_NAME = "06-lighting";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1402,23 +1534,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Lighting;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.lighting";
-				PRODUCT_NAME = Lighting;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.06-lighting";
+				PRODUCT_NAME = "06-lighting";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1434,23 +1562,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Texturing;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.texturing";
-				PRODUCT_NAME = Texturing;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.07-texturing";
+				PRODUCT_NAME = "07-texturing";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1465,23 +1589,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Texturing;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.texturing";
-				PRODUCT_NAME = Texturing;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.07-texturing";
+				PRODUCT_NAME = "07-texturing";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1497,23 +1617,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Compute;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute";
-				PRODUCT_NAME = Compute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.08-compute";
+				PRODUCT_NAME = "08-compute";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1528,23 +1644,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Compute;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute";
-				PRODUCT_NAME = Compute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.08-compute";
+				PRODUCT_NAME = "08-compute";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1560,23 +1672,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = "Compute Render";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute-to-render";
-				PRODUCT_NAME = "Compute Render";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.09-compute-to-render";
+				PRODUCT_NAME = "09-compute-to-render";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1591,23 +1699,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = "Compute Render";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.compute-to-render";
-				PRODUCT_NAME = "Compute Render";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.09-compute-to-render";
+				PRODUCT_NAME = "09-compute-to-render";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1623,23 +1727,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Debugging;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.frame-debugging";
-				PRODUCT_NAME = Debugging;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.10-frame-debugging";
+				PRODUCT_NAME = "10-frame-debugging";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1654,23 +1754,19 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = "learn-metal/ios-shared/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = Debugging;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.frame-debugging";
-				PRODUCT_NAME = Debugging;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.learn-metal-cpp.10-frame-debugging";
+				PRODUCT_NAME = "10-frame-debugging";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1686,6 +1782,15 @@
 			buildConfigurations = (
 				71A9C06C27349B9100932563 /* Debug */,
 				71A9C06D27349B9100932563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		833221BC2FFB0705004395C4 /* Build configuration list for PBXAggregateTarget "LearnMetalCPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833221BD2FFB0705004395C4 /* Debug */,
+				833221BE2FFB0705004395C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

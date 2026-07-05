@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "2630"
+   LastUpgradeVersion = "2700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83ABBC602A1306FB00763796"
-               BuildableName = "Debugging.app"
+               BuildableName = "10-frame-debugging.app"
                BlueprintName = "10-frame-debugging"
                ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83ABBC602A1306FB00763796"
-            BuildableName = "Debugging.app"
+            BuildableName = "10-frame-debugging.app"
             BlueprintName = "10-frame-debugging"
             ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83ABBC602A1306FB00763796"
-            BuildableName = "Debugging.app"
+            BuildableName = "10-frame-debugging.app"
             BlueprintName = "10-frame-debugging"
             ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "2630"
+   LastUpgradeVersion = "2700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83ABBC3E2A1305C500763796"
-               BuildableName = "Compute Render.app"
+               BuildableName = "09-compute-to-render.app"
                BlueprintName = "09-compute-to-render"
                ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83ABBC3E2A1305C500763796"
-            BuildableName = "Compute Render.app"
+            BuildableName = "09-compute-to-render.app"
             BlueprintName = "09-compute-to-render"
             ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83ABBC3E2A1305C500763796"
-            BuildableName = "Compute Render.app"
+            BuildableName = "09-compute-to-render.app"
             BlueprintName = "09-compute-to-render"
             ReferencedContainer = "container:LearnMetalCPP.xcodeproj">
          </BuildableReference>
